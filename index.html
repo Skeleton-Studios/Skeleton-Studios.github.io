@@ -1,168 +1,198 @@
 <!DOCTYPE html>
+
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
-<style>
-* {box-sizing: border-box}
- @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
- 
- /* Style the navbar */
-#navbar {
-  width: 100%;
-  background-color: #000000;
-  overflow: auto;
-}
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-  width: 25%; /* Four links of equal widths */
-  text-align: center;
-  font-family: oyh_human;
-  
-}
-
-/* Add a background color on mouse-over */
-#navbar a:hover {
-  color: red;
-}
-
-/* Style the current/active link */
-#navbar a.active {
-   color: red;
-}
-
-@media screen and (max-width: 500px) {
-#navbar a {
-  float: none;
-  display: block;
-  width: 100%;
-  text-align: left;
-  }
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-} 
- 
-body {
-  background-color: #171717;
-}
-h1 {
-  font-family: oyh_human;
-  color: white;
-  text-align: center;
-  font-size: 50px;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
-    color: #aaaaaa;
-}
-.center-logo {
-  
-  display: block;
-  padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-
-  width: 30%;
-}
-
-.center{
-  padding-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-<body>
-
-<div style="background-color:#000000" id="logo">
-
-  <img src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/Images/OYHLogo.png" alt="OYH Logo" class="center-logo">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-</div>
+    <head>
+      <title>On Your Hands</title>
+      <link rel="icon" type="image/x-icon" href="Images/OYHIcon.png">
+    </head>
+    
+    <body>
+        <style>
+        * {box-sizing: border-box}
+         @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
+         @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
 
-<div id="navbar">
-  <a class="active" href="#home">About</a>
-  <a href="#play">Play</a>
-  <a href="#news">Dev Log</a>
-  <a href="#contact">Contact</a>
-</div> 
+         /* Style the navbar */
+        #navbar {
+          width: 100%;
+          background-color: #000000;
+          overflow: auto;
+        }
+
+        /* Navbar links */
+        #navbar a {
+          float: left;
+          padding: 12px;
+          color: white;
+          text-decoration: none;
+          font-size: 40px;
+          width: 25%; /* Four links of equal widths */
+          text-align: center;
+          font-family: oyh_human;   
+        }
+
+        /* Add a background color on mouse-over */
+        #navbar a:hover {
+          color: red;
+          
+        }
+        #navbar a:hover .tooltip{
+            display: block;
+        }
+
+        /* Style the current/active link */
+        #navbar a.active {
+           color: #aa0000;
+        }
+        #navbar a.highlighted {
+            color: green;
+        }
+
+        #navbar a.active:hover {
+           color: #ff0000;
+           
+        }
+        #navbar a.highlighted:hover {
+            color: #00ff00;
+            
+        }
+
+        @media screen and (max-width: 500px) {
+        #navbar a {
+          float: none;
+          display: block;
+          width: 100%;
+          text-align: left;
+          }
+        }
 
 
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
 
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+          padding-top: 60px;
+        } 
+         
+        body {
+          background-color: #171717;
+          margin: 0px;
+        }
+        h1 {
+          font-family: oyh_human;
+          color: white;
+          text-align: center;
+          font-size: 50px;
+        }
 
-<script>
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+        p {
+            font-family: verdana;
+            font-size: 20px;
+            color: #aaaaaa;
+        }
+        .center-logo {
+          display: block;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 0px;
+          padding-right: 0px;
+          
+          margin-left: auto;
+          margin-right: auto;
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
-var logo = document.getElementById("logo");
+          width: 30%;
+        }
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-var logooffset = logo.offsetTop;
+        .center{
+          padding-top: 20px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        </style>
+        
+        <div style="background-color:#000000" id="logo">
+          <img src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/Images/OYHLogo.png" alt="OYH Logo" class="center-logo">  
+        </div>
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-    if (window.pageYOffset >= logooffset) {
-    logo.classList.add("logooffset")
-  } else {
-    logo.classList.add("logooffset")
-  }
-} 
-</script>
+        <div id="navbar">
+          <a class="active" href="#home">About</a>
+          <a class="highlighted" href="#play">Play Now!</a>
+          <a href="#news">Dev Log</a>
+          <a href="#contact">Contact</a>
+        </div> 
 
- <video class="center" controls>
-  <source src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/trailer.mp4" type="video/mp4"> 
-Your browser does not support the video tag.
-</video> 
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
 
-<h1>WHAT IS <span style="color: #ff0000">ON YOUR HANDS?</span></h1>
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+            var logo = document.getElementById("logo");
 
-<p>On Your Hands is a game that fuses challenging first person puzzles with spine-chilling horror. Inspired by Portal, Quake, and Half-Life, in On Your Hands you think fast - or die faster.
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+            var logooffset = logo.offsetTop;
 
-<br><br>THE STORY SO FAR
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+                if (window.pageYOffset >= logooffset) {
+                logo.classList.add("logooffset")
+              } else {
+                logo.classList.add("logooffset")
+              }
+            } 
+        </script>
 
-<br><br>You have no idea where you are. You&#39ve awoke on what seems to be an alien planet, with nothing but your flashlight and your wits. All you remember is that you were doing research on teleportation when the experiment went wrong, and you saw a white flash of light... now you&#39re here. The only thing familiar to you is the voice of Mack, your friend and fellow researcher. You&#39re going to need to do what it takes to survive, and make it back to Earth.
+        <video class="center" controls>
+          <source src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/trailer.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+        </video> 
 
-<br><br>Master of Magic
+        <div>
 
-<br><br>On Your Hands contains seven unique magical abilities, each of which aid in solving puzzles or fighting enemies. Uncover their secrets, make careful use of their quirks, and even upgrade them to better aid your survival.
+            <h1>WHAT IS <span style="color: #ff0000">ON YOUR HANDS?</span></h1>
 
-<br><br>Creature Feature
+            <p style="font-family:computer; font-size:22px;margin-left:100px;margin-right:100px;">
 
-<br><br>Deadly monsters such as Lurkers, Grinders, or Concealer will make surviving difficult - cower, confront, or even kill them to make it through Ooblterra alive.
+            <img src="Images/SteamScreenshot7.png" alt="A horrific alien cathedral, what secrets does it hold?" style="float:right;width:576px;height:324px;padding-left:20px;">
 
-<br><br>Unravel The Mystery
+            <span>On Your Hands is a game that fuses challenging first person puzzles with spine-chilling horror. Inspired by Portal, Quake, and Half-Life, in On Your Hands you think fast - or die faster.</span>
 
-<br><br>Find hidden secrets throughout On Your Hands&#39 levels to reveal the truth - of the &#39Oobl&#39, the strange alien race who control Ooblterra; of the wildlife that populates it; and of Prot and Mack - there&#39s more to their history than meets the eye.
+            <span style="color: #ff0000; font-size:28px;"><br><br>THE STORY SO FAR</span>
 
-</p>
+            <br><br>You have no idea where you are. You&#39ve awoke on what seems to be an alien planet, with nothing but your flashlight and your wits. All you remember is that you were doing research on teleportation when the experiment went wrong, and you saw a white flash of light... now you&#39re here. The only thing familiar to you is the voice of Mack, your friend and fellow researcher. You&#39re going to need to do what it takes to survive, and make it back to Earth.
+            
+            <img src="Images/SteamScreenshot3.png" alt="A scenic view of Yrcsalt Lake." style="float:left;width:576px;height:324px;padding-right:20px;">
+            
+            <span style="color:#ff0000; font-size:28px;"><br><br>MASTER OF MAGIC</span>
 
-</p>
-</body>
+            <br><br>On Your Hands contains seven unique magical abilities, each of which aid in solving puzzles or fighting enemies. Uncover their secrets, make careful use of their quirks, and even upgrade them to better aid your survival.
+
+            <span style="color: #ff0000; font-size:28px;"><br><br>CREATURE FEATURE</span>
+
+            <br><br>Deadly monsters such as Lurkers, Grinders, or Concealer will make surviving difficult - cower, confront, or even kill them to make it through Ooblterra alive.
+
+            <span style="color: #ff0000; font-size:28px;"><br><br>UNRAVEL THE MYSTERY</span>
+            
+            <img src="Images/SteamScreenshot6.png" alt="The central hub of Ooblterran society, Founder's City." style="float:right;width:576px;height:324px;padding-left:20px;">
+
+            <br><br>Find hidden secrets throughout On Your Hands&#39 levels to reveal the truth - of the &#39Oobl&#39, the strange alien race who control Ooblterra; of the wildlife that populates it; and of Prot and Mack - there&#39s more to their history than meets the eye.
+
+            </p>
+        </div>
+    </body>
 </html>
