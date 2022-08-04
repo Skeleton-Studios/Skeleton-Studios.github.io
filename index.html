@@ -1,28 +1,682 @@
 <!DOCTYPE html>
+<html>
+<body>
 <style>
+ @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
+ 
+ /* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+} 
+ 
 body {
   background-color: #171717;
 }
 h1 {
+    font-family: oyh_human;
     color: white;
     text-align: center;
+    font-size: 50px;
 }
 
 p {
     font-family: verdana;
     font-size: 20px;
 }
-.center {
+.center-logo {
   display: block;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
 }
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 50%;
+}
 </style>
+<<<<<<< Updated upstream
 <html>
 <body>
 <img src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/Images/OYHLogo.png" alt="OYH Logo" class="center">
 <p>play onyour handss</p>
 </body>
 </html>
+=======
+ <div id="navbar">
+  <img src="images\OYHLogo.png" alt="OYH Logo" class="center-logo">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div> 
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+var logo = document.getElementById("logo");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+var logooffset = logo.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+    if (window.pageYOffset >= logooffset) {
+    logo.classList.add("logooffset")
+  } else {
+    logo.classList.add("logooffset")
+  }
+} 
+</script>
+
+ <video class="center" controls>
+  <source src="Letsgo-1.mp4" type="video/mp4"> 
+Your browser does not support the video tag.
+</video> 
+
+<h1>WHAT IS <span style="color: #ff0000">ON YOUR HANDS?</span></h1>
+
+<p>play onyour handss
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+Curse you Perry the Platypus.
+
+</p>
+</body>
+</html>
+
+>>>>>>> Stashed changes
