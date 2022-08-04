@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 <style>
+* {box-sizing: border-box}
  @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
  
  /* Style the navbar */
 #navbar {
-  overflow: hidden;
-  background-color: #333;
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
 }
 
 /* Navbar links */
 #navbar a {
   float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
+  padding: 12px;
+  color: white;
   text-decoration: none;
+  font-size: 30px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+  font-family: oyh_human;
+  
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+/* Add a background color on mouse-over */
+#navbar a:hover {
+  color: red;
+}
+
+/* Style the current/active link */
+#navbar a.active {
+   color: red;
+}
+
+@media screen and (max-width: 500px) {
+#navbar a {
+  float: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  }
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -41,45 +61,53 @@ body {
   background-color: #171717;
 }
 h1 {
-    font-family: oyh_human;
-    color: white;
-    text-align: center;
-    font-size: 50px;
+  font-family: oyh_human;
+  color: white;
+  text-align: center;
+  font-size: 50px;
 }
 
 p {
     font-family: verdana;
     font-size: 20px;
+    color: #aaaaaa;
 }
 .center-logo {
+  
   display: block;
-  margin-top: 50px;
+  padding-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
+
   width: 30%;
 }
 
 .center{
+  padding-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-    width: 50%;
+  width: 50%;
 }
 </style>
-<<<<<<< Updated upstream
-<html>
 <body>
-<img src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/Images/OYHLogo.png" alt="OYH Logo" class="center">
-<p>play onyour handss</p>
-</body>
-</html>
-=======
- <div id="navbar">
-  <img src="images\OYHLogo.png" alt="OYH Logo" class="center-logo">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
+
+<div style="background-color:#000000" id="logo">
+
+  <img src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/Images/OYHLogo.png" alt="OYH Logo" class="center-logo">  
+    
+</div>
+
+<div id="navbar">
+  <a class="active" href="#home">About</a>
+  <a href="#play">Play</a>
+  <a href="#news">Dev Log</a>
   <a href="#contact">Contact</a>
 </div> 
+
+
+
 
 <script>
 // When the user scrolls the page, execute myFunction
@@ -109,574 +137,32 @@ function myFunction() {
 </script>
 
  <video class="center" controls>
-  <source src="Letsgo-1.mp4" type="video/mp4"> 
+  <source src="trailer.mp4" type="video/mp4"> 
 Your browser does not support the video tag.
 </video> 
 
 <h1>WHAT IS <span style="color: #ff0000">ON YOUR HANDS?</span></h1>
 
-<p>play onyour handss
+<p>On Your Hands is a game that fuses challenging first person puzzles with spine-chilling horror. Inspired by Portal, Quake, and Half-Life, in On Your Hands you think fast - or die faster.
 
-Curse you Perry the Platypus.
+<br><br>THE STORY SO FAR
 
-Curse you Perry the Platypus.
+<br><br>You have no idea where you are. You&#39ve awoke on what seems to be an alien planet, with nothing but your flashlight and your wits. All you remember is that you were doing research on teleportation when the experiment went wrong, and you saw a white flash of light... now you&#39re here. The only thing familiar to you is the voice of Mack, your friend and fellow researcher. You&#39re going to need to do what it takes to survive, and make it back to Earth.
 
-Curse you Perry the Platypus.
+<br><br>Master of Magic
 
-Curse you Perry the Platypus.
+<br><br>On Your Hands contains seven unique magical abilities, each of which aid in solving puzzles or fighting enemies. Uncover their secrets, make careful use of their quirks, and even upgrade them to better aid your survival.
 
-Curse you Perry the Platypus.
+<br><br>Creature Feature
 
-Curse you Perry the Platypus.
+<br><br>Deadly monsters such as Lurkers, Grinders, or Concealer will make surviving difficult - cower, confront, or even kill them to make it through Ooblterra alive.
 
-Curse you Perry the Platypus.
+<br><br>Unravel The Mystery
 
-Curse you Perry the Platypus.
+<br><br>Find hidden secrets throughout On Your Hands&#39 levels to reveal the truth - of the &#39Oobl&#39, the strange alien race who control Ooblterra; of the wildlife that populates it; and of Prot and Mack - there&#39s more to their history than meets the eye.
 
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
-
-Curse you Perry the Platypus.
+</p>
 
 </p>
 </body>
 </html>
-
->>>>>>> Stashed changes
