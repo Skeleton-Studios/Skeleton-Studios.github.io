@@ -62,34 +62,34 @@
         @media screen and (max-width: 500px) {
         #navbar a {
           float: none;
-          display: block;
-          width: 100%;
-          text-align: left;
+            display: block;
+            width: 100%;
+            text-align: left;
           }
         }
 
 
         /* The sticky class is added to the navbar with JS when it reaches its scroll position */
         .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
+            position: fixed;
+            top: 0;
+            width: 100%;
         }
 
         /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
         .sticky + .content {
-          padding-top: 60px;
+            padding-top: 60px;
         } 
          
         body {
-          background-color: #171717;
-          margin: 0px;
+            background-color: #171717;
+            margin: 0px;
         }
         h1 {
-          font-family: oyh_human;
-          color: white;
-          text-align: center;
-          font-size: 50px;
+            font-family: oyh_human;
+            color: white;
+            text-align: center;
+            font-size: 50px;
         }
 
         p {
@@ -99,32 +99,59 @@
             text-align: center;
         }
         .center-logo {
-          display: block;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          padding-left: 0px;
-          padding-right: 0px;
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
           
-          margin-left: auto;
-          margin-right: auto;
+            margin-left: auto;
+            margin-right: auto;
 
-          width: 30%;
+            width: 30%;
         }
 
         .center{
-          margin-top:40px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 30%;
+            margin-top:40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
         }
         
         .center-text{
-          margin-top:20px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 80%;
+            margin-top:20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .container { 
+          height: 25px;
+          position: relative;
+        }
+
+        .cntr {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
         }
         
         </style>
@@ -153,25 +180,34 @@
             var logooffset = logo.offsetTop;
 
             // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
+            function myFunction(){
+              if (window.pageYOffset >= sticky){
                 navbar.classList.add("sticky")
               } else {
                 navbar.classList.remove("sticky");
               }
-                if (window.pageYOffset >= logooffset) {
+                if (window.pageYOffset >= logooffset){
                 logo.classList.add("logooffset")
               } else {
                 logo.classList.add("logooffset")
               }
             } 
         </script>
+            <h1> TRY <span style="color:#ff0000">ON YOUR HANDS</span> NOW!</h1>
+            <p><span style="font-family:computer;">Try <span style="color: red">On Your Hands&#39;</span> first four levels free in this extensive demo.</p>
+            <div class="container">
+                <div class="cntr">
+                    <a href="https://github.com/Skeleton-Studios/Skeleton-Studios.github.io/releases/download/demo/On_Your_Hands-Demo-v2.zip" class="button" style="font-family:computer; font-size:20px;">Play Now...</a>
+                </div>
+            </div>
             <h1>BUY <span style="color: #ff0000">ON YOUR HANDS</span> NOW!</h1>
+            
             <p><span style="font-family:computer;">Buy <span style="color: red">On Your Hands</span> at its current price and receive all future chapters <span style="color: green">free!</span></span>
-        <div> 
+        
+        <div>             
             <iframe src="https://store.steampowered.com/widget/1708200/" frameborder="0" width="346" height="190" class="center"></iframe>     
-            <iframe src="https://itch.io/embed/952521?bg_color=333333&amp;fg_color=ffffff&amp;link_color=00ff00&amp;border_color=171717" width="552" height="167" frameborder="0" class="center"><a href="https://skullcrusher10110.itch.io/on-your-hands">On Your Hands by SkullCrusher10110</a></iframe>      
-                   
+            <iframe src="https://itch.io/embed/952521?bg_color=333333&amp;fg_color=ffffff&amp;link_color=00ff00&amp;border_color=171717" width="552" height="167" frameborder="0" class="center"><a href="https://skullcrusher10110.itch.io/on-your-hands">On Your Hands by SkullCrusher10110</a></iframe>        
         </div>
+        
     </body>
 </html>
