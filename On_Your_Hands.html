@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <head>
-      <title>Skeleton Studios</title>
-      <link rel="icon" type="image/x-icon" href="Images/logosmall.png">
-    </head>
+  <head>
+    <title>Skeleton Studios</title>
+    <link rel="icon" type="image/x-icon" href="Images/logosmall.png">
+  </head>
     
-    <body>
-        <style>
+  <body>
+      <style>
+      
         * {box-sizing: border-box}
          @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
          @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
+         
+        body {
+          background-color: #171717;
+          margin: 0px;
+        }
+        h1 {
+          font-family: oyh_human;
+          color: white;
+          text-align: center;
+          font-size: 50px;
+        }
 
-         /* Style the navbar */
+        p {
+            font-family: verdana;
+            font-size: 20px;
+            color: #aaaaaa;
+        }
+        /* LOGO STUFF */
+        .center-logo {
+          display: block;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 0px;
+          padding-right: 0px;
+          
+          margin-left: auto;
+          margin-right: auto;
+
+          width: 30%;
+        }
+
+        .center{
+          padding-top: 20px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        footer {
+          text-align: center;
+          padding: 100px;
+          background-color: Black;
+          color: white;
+        }
+
+        /* NAVBAR STUFF */
         #navbar {
           width: 100%;
           background-color: #000000;
@@ -82,190 +127,140 @@
           padding-top: 60px;
         } 
          
-        body {
-          background-color: #171717;
-          margin: 0px;
-        }
-        h1 {
-          font-family: oyh_human;
-          color: white;
-          text-align: center;
-          font-size: 50px;
-        }
-
-        p {
-            font-family: verdana;
-            font-size: 20px;
-            color: #aaaaaa;
-        }
-        .center-logo {
-          display: block;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          padding-left: 0px;
-          padding-right: 0px;
-          
-          margin-left: auto;
-          margin-right: auto;
-
-          width: 30%;
-        }
-
-        .center{
-          padding-top: 20px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-        }
-        footer {
-          text-align: center;
-          padding: 100px;
-          background-color: Black;
-          color: white;
-        }
-        .box {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 10px 2em;
-        }
-
-        .box :first-child {
-            align-self: center;
-        }
-		
-		/* DROPDOWN STUFF */
-		.dropdown .dropbtn {
-		  background-color: #000000;
-		  color: #ffffff;
-		  border: none;
-          outline: none;
-		  background-color: inherit;
-	      font-family: inherit;
-		  font-size: 40px;
-		  
-		}
-		.navbar a:hover, .dropdown:hover .dropbtn {
-		  background-color: red;
-		}
-		.dropdown {
-		  font-family: oyh_human;
-		  font-size: 40px;
-		
-		  overflow: hidden;
-		  color: black;
-		  display: inline-block;
-		}
-
-		.dropdown-content {
-		  display: none;
-		  position: absolute;
-		  z-index: 1;
-		}
-
-		.dropdown-content a {
-		  float:none;
-		  color: black;
-		  padding: 12px 16px;
-		  text-decoration: none;
-		  display: block;
-		  text-align: left;
-		}
-
-		.dropdown-content a:hover {background-color: #ddd;}
-
-		.dropdown:hover .dropdown-content {display: block;}
-
-		.dropdown:hover .dropbtn {background-color: #ffffff;}
-        </style>
         
-        <div style="background-color:#000000" id="logo">
-          <img src="Images/long_logo.png" alt="Skeleton Studios Logo" class="center-logo">  
-        </div>
+    
+        /* DROPDOWN STUFF */
+        .dropdown .dropbtn {
+          background-color: #000000;
+          color: #ffffff;
+          border: none;
+              outline: none;
+          background-color: inherit;
+            font-family: inherit;
+          font-size: 40px;
+          
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        .dropdown {
+          font-family: oyh_human;
+          font-size: 40px;
+        
+          overflow: hidden;
+          color: black;
+          display: inline-block;
+        }
 
-        <div id="navbar">
-		  <div class="dropdown">
-			<button class="dropbtn">Games</button>
-				<div class="dropdown-content">
-					<a class="active">ON YOUR HANDS</a>
-					<a href="Welcome_To_Ooblterra.html">WELCOME TO OOBLTERRA</a>
-					<a href="Project_Freezer.html">UPCOMING PROJECTS</a>
-				</div>
-		  </div> 
-          <a class="highlighted" href="playnow.html">Play Now!</a>
-          <a href="devlog.html">Dev Log</a>
-          <a href="contact.html">Contact</a>
-        </div> 
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          z-index: 1;
+        }
 
-        <script>
-            // When the user scrolls the page, execute myFunction
-            window.onscroll = function() {myFunction()};
+        .dropdown-content a {
+          float:none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
 
-            // Get the navbar
-            var navbar = document.getElementById("navbar");
-            var logo = document.getElementById("logo");
+        .dropdown-content a:hover {background-color: #ddd;}
 
-            // Get the offset position of the navbar
-            var sticky = navbar.offsetTop;
-            var logooffset = logo.offsetTop;
+        .dropdown:hover .dropdown-content {display: block;}
 
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-                if (window.pageYOffset >= logooffset) {
-                logo.classList.add("logooffset")
-              } else {
-                logo.classList.add("logooffset")
-              }
-            } 
-        </script>
+        .dropdown:hover .dropbtn {background-color: #ffffff;}
+      </style>
+      
+      <div style="background-color:#000000" id="logo">
+        <img src="Images/long_logo.png" alt="Skeleton Studios Logo" class="center-logo">  
+      </div>
 
-        <video class="center" controls>
-          <source src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/trailer.mp4" type="video/mp4"> 
-        Your browser does not support the video tag.
-        </video> 
+      <div id="navbar">
+    <div class="dropdown">
+    <button class="dropbtn">Games</button>
+      <div class="dropdown-content">
+        <a class="active">ON YOUR HANDS</a>
+        <a href="Welcome_To_Ooblterra.html">WELCOME TO OOBLTERRA</a>
+        <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
+      </div>
+    </div> 
+        <a class="highlighted" href="playnow.html">Play Now!</a>
+        <a href="devlog.html">Dev Log</a>
+        <a href="contact.html">Contact</a>
+      </div> 
 
-        <div>
+      <script>
+          // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
 
-            <h1>WHAT IS <span style="color: #ff0000">ON YOUR HANDS?</span></h1>
+          // Get the navbar
+          var navbar = document.getElementById("navbar");
+          var logo = document.getElementById("logo");
 
-            <p style="font-family:computer; font-size:22px;margin-left:100px;margin-right:100px;">
+          // Get the offset position of the navbar
+          var sticky = navbar.offsetTop;
+          var logooffset = logo.offsetTop;
 
-            <img src="Images/SteamScreenshot7.png" alt="A horrific alien cathedral, what secrets does it hold?" style="float:right;width:576px;height:324px;padding-left:20px;">
+          // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+              if (window.pageYOffset >= logooffset) {
+              logo.classList.add("logooffset")
+            } else {
+              logo.classList.add("logooffset")
+            }
+          } 
+      </script>
 
-            <span>On Your Hands is a game that fuses challenging first person puzzles with spine-chilling horror. Inspired by Portal, Quake, and Half-Life, in On Your Hands you think fast - or die faster.</span>
+      <video class="center" controls>
+        <source src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/trailer.mp4" type="video/mp4"> 
+      Your browser does not support the video tag.
+      </video> 
 
-            <span style="color: #ff0000; font-size:28px;"><br><br>THE STORY SO FAR</span>
+    <div>
 
-            <br><br>You have no idea where you are. You&#39ve awoke on what seems to be an alien planet, with nothing but your flashlight and your wits. All you remember is that you were doing research on teleportation when the experiment went wrong, and you saw a white flash of light... now you&#39re here. The only thing familiar to you is the voice of Mack, your friend and fellow researcher. You&#39re going to need to do what it takes to survive, and make it back to Earth.
-            
-            <img src="Images/SteamScreenshot3.png" alt="A scenic view of Yrcsalt Lake." style="float:left;width:576px;height:324px;padding-right:20px;">
-            
-            <span style="color:#ff0000; font-size:28px;"><br><br>MASTER OF MAGIC</span>
+      <h1>WHAT IS <span style="color: #ff0000">ON YOUR HANDS?</span></h1>
 
-            <br><br>On Your Hands contains seven unique magical abilities, each of which aid in solving puzzles or fighting enemies. Uncover their secrets, make careful use of their quirks, and even upgrade them to better aid your survival.
+      <p style="font-family:computer; font-size:22px;margin-left:100px;margin-right:100px;">
 
-            <span style="color: #ff0000; font-size:28px;"><br><br>CREATURE FEATURE</span>
+      <img src="Images/SteamScreenshot7.png" alt="A horrific alien cathedral, what secrets does it hold?" style="float:right;width:576px;height:324px;padding-left:20px;">
 
-            <br><br>Deadly monsters such as Lurkers, Grinders, or Concealers will make surviving difficult - cower, confront, or even kill them to make it through Ooblterra alive.
+      <span>On Your Hands is a game that fuses challenging first person puzzles with spine-chilling horror. Inspired by Portal, Quake, and Half-Life, in On Your Hands you think fast - or die faster.</span>
 
-            <span style="color: #ff0000; font-size:28px;"><br><br>UNRAVEL THE MYSTERY</span>
-            
-            <img src="Images/SteamScreenshot6.png" alt="The central hub of Ooblterran society, Founder's City." style="float:right;width:576px;height:324px;padding-left:20px;">
+      <span style="color: #ff0000; font-size:28px;"><br><br>THE STORY SO FAR</span>
 
-            <br><br>Find hidden secrets throughout On Your Hands&#39 levels to reveal the truth - of the &#39Oobl&#39, the strange alien race who control Ooblterra; of the wildlife that populates it; and of Prot and Mack - there&#39s more to their history than meets the eye.
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            </p>
-        </div>
-    </body>
+      <br><br>You have no idea where you are. You&#39ve awoke on what seems to be an alien planet, with nothing but your flashlight and your wits. All you remember is that you were doing research on teleportation when the experiment went wrong, and you saw a white flash of light... now you&#39re here. The only thing familiar to you is the voice of Mack, your friend and fellow researcher. You&#39re going to need to do what it takes to survive, and make it back to Earth.
+      
+      <img src="Images/SteamScreenshot3.png" alt="A scenic view of Yrcsalt Lake." style="float:left;width:576px;height:324px;padding-right:20px;">
+      
+      <span style="color:#ff0000; font-size:28px;"><br><br>MASTER OF MAGIC</span>
+
+      <br><br>On Your Hands contains seven unique magical abilities, each of which aid in solving puzzles or fighting enemies. Uncover their secrets, make careful use of their quirks, and even upgrade them to better aid your survival.
+
+      <span style="color: #ff0000; font-size:28px;"><br><br>CREATURE FEATURE</span>
+
+      <br><br>Deadly monsters such as Lurkers, Grinders, or Concealers will make surviving difficult - cower, confront, or even kill them to make it through Ooblterra alive.
+
+      <span style="color: #ff0000; font-size:28px;"><br><br>UNRAVEL THE MYSTERY</span>
+      
+      <img src="Images/SteamScreenshot6.png" alt="The central hub of Ooblterran society, Founder's City." style="float:right;width:576px;height:324px;padding-left:20px;">
+
+      <br><br>Find hidden secrets throughout On Your Hands&#39 levels to reveal the truth - of the &#39Oobl&#39, the strange alien race who control Ooblterra; of the wildlife that populates it; and of Prot and Mack - there&#39s more to their history than meets the eye.
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </p>
+    </div>
+  </body>
 </html>
