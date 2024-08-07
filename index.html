@@ -5,167 +5,41 @@
     
     <head>
       <title>Skeleton Studios</title>
-      <link rel="icon" type="image/x-icon" href="Images/logosmall.png">
+      <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
     </head>
-    
+
     <body>
+
         <style>
-        * {box-sizing: border-box}
-         @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
-         @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
-
-         /* Style the navbar */
-        #navbar {
-          width: 100%;
-          background-color: #000000;
-          overflow: auto;
-        }
-
-        /* Navbar links */
-        #navbar a {
-          float: left;
-          padding: 12px;
-          color: white;
-          text-decoration: none;
-          font-size: 40px;
-          width: 25%; /* Four links of equal widths */
-          text-align: center;
-          font-family: oyh_human;   
-        }
-
-        /* Add a background color on mouse-over */
-        #navbar a:hover {
-          color: red;
-          
-        }
-        #navbar a:hover .tooltip{
-            display: block;
-        }
-
-        /* Style the current/active link */
-        #navbar a.active {
-           color: #aa0000;
-        }
-        #navbar a.highlighted {
-            color: green;
-        }
-
-        #navbar a.active:hover {
-           color: #ff0000;
-           
-        }
-        #navbar a.highlighted:hover {
-            color: #00ff00;
-            
-        }
-
-        @media screen and (max-width: 500px) {
-        #navbar a {
-          float: none;
-          display: block;
-          width: 100%;
-          text-align: left;
-          }
-        }
-
-
-        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-        .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-
-        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-        .sticky + .content {
-          padding-top: 60px;
-        } 
-         
-        body {
-          background-color: #171717;
-          margin: 0px;
-        }
-        h1 {
-          font-family: oyh_human;
-          color: white;
-          text-align: center;
-          font-size: 50px;
-        }
-
-        p {
-            font-family: verdana;
-            font-size: 20px;
-            color: #aaaaaa;
-        }
-        .center-logo {
-          display: block;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          padding-left: 0px;
-          padding-right: 0px;
-          
-          margin-left: auto;
-          margin-right: auto;
-
-          width: 30%;
-        }
-
-        .center{
-          padding-top: 20px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-        }
-        footer {
-          text-align: center;
-          padding: 100px;
-          background-color: Black;
-          color: white;
-        }
-        .box {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 10px 2em;
-        }
-
-        .box :first-child {
-            align-self: center;
-        }
-      
-        </style>
-        
-        <div style="background-color:#000000" id="logo">
+        @import url('StyleSheet.css');
+        </style>     
+        <div style="background-color:#000000; text-align: center;" id="logo">
           <img src="Images/long_logo.png" alt="Skeleton Studios Logo" class="center-logo">  
         </div>
-
-
         <div>
-
-            <p style="font-family:computer; font-size:22px;margin-left:100px;margin-right:100px;">
-            <span style="color: #ff0000; font-size:28px;"><br><br>ABOUT US</span>
-            
-            <img src="Images/splash_logo_tagline1.png" alt="Skeleton Studios Logo" style="float:right;width:626px;height:324px;padding-left:20px;">
-
-            
-
+            <p style="font-family:computer; font-size:22px;margin-left:100px;margin-right:100px; text-align: justify;">
+            <span style="color: #00ff00; font-size:38px; font-family:oyh_human;"><br><br>ABOUT US</span>
+            <img src="Images/SteamScreenshot8.png" alt="On Your Hands" style="float:right;width:626px;height:324px;padding-left:20px;">
             <br><br> Skeleton Studios is a team of indie game developers primarily focused on first-person singleplayer games. With alien frontiers, dark undergrounds, and shattered earths, our games bring you to worlds you've never seen anything like before - promising fun, intriguing, and exciting times ahead. We strive to deliver unique, meaningful experiences using hand-crafted assets, high attention to detail, and a love for both the medium and our contributions to it.
             
-            <img src="Images/SteamScreenshot3.png" alt="A scenic view of Yrcsalt Lake." style="float:left;width:576px;height:324px;padding-right:20px;">
-            
-            <span style="color:#ff0000; font-size:28px;"><br><br>OUR GAMES</span>
-
-            <br><br>Skeleton Studios has been hard at work on games since 2020, and we released our first, <a href="On_Your_Hands.html">On Your Hands</a>, in 2023. After development of <a href="Welcome_To_Ooblterra.html">Welcome to Ooblterra</a>, our latest projects are in progress; join the <a href="">Mailing List</a> or <a href="">Follow us on twitter</a> for regular updates.
-
-            <span style="color: #ff0000; font-size:28px;"><br><br>CREATURE FEATURE</span>
-
-            <br><br>Deadly monsters such as Lurkers, Grinders, or Concealers will make surviving difficult - cower, confront, or even kill them to make it through Ooblterra alive.
-
-            <span style="color: #ff0000; font-size:28px;"><br><br>UNRAVEL THE MYSTERY</span>
-            
-            <img src="Images/SteamScreenshot6.png" alt="The central hub of Ooblterran society, Founder's City." style="float:right;width:576px;height:324px;padding-left:20px;">
-
-            <br><br>Find hidden secrets throughout On Your Hands&#39 levels to reveal the truth - of the &#39Oobl&#39, the strange alien race who control Ooblterra; of the wildlife that populates it; and of Prot and Mack - there&#39s more to their history than meets the eye.
+            <h1 style="color: #00ff00; font-size:38px; text-align: center;"><br><br>SOUND EXCITING? JOIN US!</h1>
+            <!-- Buttons for mailing list, twitter, and discord -->
+            <div class="container">
+              <div class="cntr">
+                <a href="" class="button" style="font-family:computer; font-size:20px; background-color:#ff0000">Mailing List</a>
+                <a href="https://www.twitter.com/OYHGame" class="button" style="font-family:computer; font-size:20px; background-color:#1DA1F2">Twitter</a>
+                <a href="https://discord.gg/8D9faPaE7p" class="button" style="font-family:computer; font-size:20px; background-color:#5865F2">Discord</a>
+              </div>
+            </div>
+            <h1 style="color: #00ff00; font-size:38px; text-align: center;"><br><br>NOT CONVINCED? LEARN MORE AND YOU WILL BE!</h1>
+            <div class="container">
+              <div class="cntr">
+                <a href="OurGames.html" class="button" style="background-color:#00bb00">OUR GAMES</a>
+                <a href="devlog.html" class="button" style="background-color:#00bb00">DEV LOGS</a>
+                <a href="presskit.html" class="button" style="background-color:#00bb00">PRESS KIT</a>
+                <a href="contact.html" class="button" style="background-color:#00bb00">CONTACT US</a>
+              </div>
+            </div>
             <br>
             <br>
             <br>

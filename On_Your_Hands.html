@@ -5,140 +5,19 @@
     
   <head>
     <title>Skeleton Studios</title>
-    <link rel="icon" type="image/x-icon" href="Images/logosmall.png">
+    <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
   </head>
     
   <body>
       <style>
-      
-        * {box-sizing: border-box}
-         @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
-         @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
-         
-        body {
-          background-color: #171717;
-          margin: 0px;
-        }
-        h1 {
-          font-family: oyh_human;
-          color: white;
-          text-align: center;
-          font-size: 50px;
-        }
-
-        p {
-            font-family: verdana;
-            font-size: 20px;
-            color: #aaaaaa;
-        }
-        
-        /* LOGO STUFF */
-        .center-logo {
-          display: block;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          padding-left: 0px;
-          padding-right: 0px;
-          
-          margin-left: auto;
-          margin-right: auto;
-
-          width: 30%;
-        }
-
-        .center{
-          padding-top: 20px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-        }
-        footer {
-          text-align: center;
-          padding: 100px;
-          background-color: Black;
-          color: white;
-        }
-        
-        /* NAVBAR STUFF */
-        .navbar {
-          overflow: hidden;
-          background-color: black;
-          display:flex; 
-          justify-content:center;
-        }
-
-        .navbar a {
-          float: left;
-          font-size: 30px;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-family: oyh_human;   
-          width: 25vw;
-        }
-        .navbar a.active {
-          color: red;
-        }
-        /* DROPDOWN STUFF */
-        .dropdown {
-          float: left;
-          overflow: hidden;
-
-        }
-        
-
-        .dropdown .dropbtn {
-          font-size: 30px;  
-          border: none;
-          outline: none;
-          color: white;
-          padding: 14px 16px;
-          background-color: inherit;
-          font-family: oyh_human;   
-          width: 25vw;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-          color: red;
-        }
-
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-
-        }
-
-        .dropdown-content a {
-          float: none;
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: center;
-        }
-
-        .dropdown-content a:hover {
-          background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
+      @import url('StyleSheet.css');
       </style>
       
-      <div style="background-color:#000000" id="logo">
-        <img src="Images/long_logo.png" alt="Skeleton Studios Logo" class="center-logo">  
-      </div>
+
 
       <div class="navbar">
     <div class="dropdown">
-    <button class="dropbtn">Games</button>
+    <button onclick="clickfunction()" class="dropbtn">Games</button>
       <div class="dropdown-content">
         <a class="active">ON YOUR HANDS</a>
         <a href="Welcome_To_Ooblterra.html">WELCOME TO OOBLTERRA</a>
@@ -151,30 +30,33 @@
       </div> 
 
       <script>
-          // When the user scrolls the page, execute myFunction
-          window.onscroll = function() {myFunction()};
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
 
-          // Get the navbar
-          var navbar = document.getElementById("navbar");
-          var logo = document.getElementById("logo");
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+        var logo = document.getElementById("logo");
 
-          // Get the offset position of the navbar
-          var sticky = navbar.offsetTop;
-          var logooffset = logo.offsetTop;
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        var logooffset = logo.offsetTop;
 
-          // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-          function myFunction() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-            } else {
-              navbar.classList.remove("sticky");
-            }
-              if (window.pageYOffset >= logooffset) {
-              logo.classList.add("logooffset")
-            } else {
-              logo.classList.add("logooffset")
-            }
-          } 
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+            if (window.pageYOffset >= logooffset) {
+            logo.classList.add("logooffset")
+          } else {
+            logo.classList.add("logooffset")
+          }
+        } 
+        function clickfunction() {
+          window.open("OurGames.html","_self")
+        }     
       </script>
 
       <video class="center" controls>
