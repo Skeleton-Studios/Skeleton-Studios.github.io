@@ -7,64 +7,115 @@
       <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
     </head>
     <body>
-        <style>
+
+      <style>
         @import url('StyleSheet.css');
-        </style>     
-        <div style="background-color:#000000; text-align: center;" id="logo">
-          <a href="index.html">
-            <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
-          </a>
-        </div>
-        <div>
-            <h1 style="color: #00ff00; font-size:50px; font-family:computer; text-align: center;margin-top:-90px;"><br><br>GAMES</h1>
-            <!--ON YOUR HANDS-->
-            <main class='main'>
+      </style>     
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
+        </a>
+      </div>
 
-              <section class='left section'>
-                <p style="font-family:computer; font-size:22px;margin-left:100px;margin-right:100px;margin-top:-150px; margin-bottom:-30px; text-align: justify;">
-                  <span style="color: #ff0000; font-size:38px; font-family:oyh_human;"><br><br>ON YOUR HANDS</span>
-                </p>
-                <p style="font-family:computer; font-size:22px;margin-left:100px;margin-right:100px;text-align: justify;">
-                  <span style="font-size:15px;; margin-bottom:50px;">RELEASED: APRIL 2023</span>
-                  </br>
-                  An unexplored alien world, seven unique magical abilities, 20+ levels, and a zoo's worth of strange monsters! On Your Hands is a first person puzzle game with light horror elements.
-                </p>
-                <div class="container" style="margin-left:100px;">
-                  <a href="" class="button" style="font-family:computer; font-size:20px; background-color:#ff0000">LEARN MORE</a>
-                  <a href="" class="button" style="font-family:computer; font-size:20px; background-color:#00ff00">PLAY DEMO</a>
-                  <a href="" class="button" style="font-family:computer; font-size:20px; background-color:#5865F2">BUY NOW</a>
-                </div>
-              </section>
-              <section class='right section'>
-                <video src="Images/OYH_Trailer.mp4" type="video/mp4" controls></video>
-              </section>
-            </main>
-            </br>
-            </br>
-            </br>
-            <!--WELCOME TO OOBLTERRA-->
-            <main class='main'>
-              <section class='left section'>
-              <p style="font-family:computer; margin-left:100px;margin-right:-50px;">
-                <video src="Images/OYH_Trailer.mp4" type="video/mp4" controls></video>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn-active">GAMES</button>
+          <div class="dropdown-content">
+            <a href="On_Your_Hands.html">ON YOUR HANDS</a>
+            <a href="Welcome_To_Ooblterra.html">WELCOME TO OOBLTERRA</a>
+            <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
+          </div>
+        </div> 
+        <a href="index.html">ABOUT</a>
+        <a href="devlog.html">DEV LOG</a>
+        <a href="contact.html">CONTACT</a>
+      </div> 
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+        var logo = document.getElementById("logo");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        var logooffset = logo.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+            if (window.pageYOffset >= logooffset) {
+            logo.classList.add("logooffset")
+          } else {
+            logo.classList.add("logooffset")
+          }
+        } 
+        function clickfunction() {
+          window.open("OurGames.html","_self")
+        }     
+      </script>
+      <div>
+          <h1 style="color: #00ff00; font-size:50px; font-family:computer; text-align: center;margin-top:-90px;"><br><br>GAMES</h1>
+          <!--ON YOUR HANDS-->
+          <main class='main' style="margin-left: 5vw;">
+            <section class='left section' style="margin-right:5vw;">
+              <p style="font-family:computer; font-size:22px; text-align: justify;">
+                <span style="color: #ff0000; font-size:38px; font-family:oyh_human;">ON YOUR HANDS</span>
               </p>
-              </section>
-              <section class='right section'>
-                <p style="font-family:computer; font-size:22px;margin-right:150px;margin-top:-150px;margin-bottom:-30px; text-align: justify;">
-                  <span style="color: #00ccaa; font-size:38px; font-family:oyh_human;"><br><br>WELCOME TO OOBLTERRA</span>
-                </p>
-                <p style="font-family:computer; font-size:22px;margin-right:150px;text-align: justify;">
-                  <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">RELEASED: MAY 2024</span>
-                  </br>
-                  An unexplored alien world, seven unique magical abilities, 20+ levels, and a zoo's worth of strange monsters! On Your Hands is a first person puzzle game with light horror elements.
-                </p>
-                <div class="container" style="text-align:center;margin-left:-150px;">
-                  <a href="" class="button" style="font-family:computer; font-size:20px; background-color:#ff0000">LEARN MORE</a>
-                  <a href="" class="button" style="font-family:computer; font-size:20px; background-color:#00ff00">PLAY NOW</a>
-                </div>
-              </section>
+              <p style="font-family:computer; font-size:22px;text-align: justify;">
+                <span style="font-size:15px;; margin-bottom:50px;">RELEASED: APRIL 2023</span>
+                </br>
+                An unexplored alien world, seven unique magical abilities, 20+ levels, and a zoo's worth of strange monsters! <span style="color:#ff0000">On Your Hands</span> is a first person puzzle game with light horror elements.
+              </p>
+              <div class="container" style=" text-align: left;">
+                <a href="On_Your_Hands.html" class="button" style="font-family:computer; font-size:20px; background-color:#ff0000;">LEARN MORE</a>
+                <a href="https://github.com/Skeleton-Studios/Skeleton-Studios.github.io/releases/download/demo2/On_Your_Hands-Full_Release_Demo.zip" class="button" style="font-family:computer; font-size:20px; background-color:rgb(4, 60, 4)">PLAY DEMO</a>
+                <div class="dropdown">
+                  <div class="dropbtn" style="width:auto; background-color:#00ee00; border-radius: 8px; padding: 15px 32px; font-size: 20px; margin-right: 5px;">BUY NOW</div>
+                  <div class="dropdown-content">
+                    <a href="https://store.steampowered.com/app/1708200/On_Your_Hands/" target=”_blank” style="font-family:computer;">STEAM</a>
+                    <a href="https://skeletonstudios.itch.io/on-your-hands" target=”_blank” style="font-family:computer;">ITCH.IO</a>
+                    <a href="https://gamejolt.com/games/onyourhands/806240" target=”_blank” style="font-family:computer;">GAMEJOLT</a>
+                  </div>
+                </div> 
+              </div>
+            </section>
+            <section class='right section'>
+              <video src="Images/OYH_Trailer.mp4" type="video/mp4" controls></video>
+            </section>
+          </main>
+          </br>
+          </br>
+          </br>
+          <!--WELCOME TO OOBLTERRA-->
+          <main class='main'>
+            <section class='left section'>
+            <p style="font-family:computer; margin-left:100px;margin-right:-50px;">
+              <video src="Images/WTO_trailer.mp4" type="video/mp4" controls></video>
+            </p>
+            </section>
+            <section class='right section'>
+              <p style="font-family:computer; font-size:22px;margin-right:150px;margin-top:-150px;margin-bottom:-30px; text-align: justify;">
+                <span style="color: #00ccaa; font-size:38px; font-family:oyh_human;"><br><br>WELCOME TO OOBLTERRA</span>
+              </p>
+              <p style="font-family:computer; font-size:22px;margin-right:150px;text-align: justify;">
+                <br>
+                <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">RELEASED: MAY 2024</span>
+                </br>
+                Featuring a brand new moon, interior, 7 enemy types, 4 new map hazards, 10 new scrap, and many fun mechanics, <span style="color: #00ccaa;">Welcome to Ooblterra</span> is a free mod for Lethal Company based on <span style="color:#ff0000">On Your Hands</span>.
+              </p>
+              <div class="container" style="text-align:left;">
+                <a href="Welcome_To_Ooblterra.html" class="button" style="font-family:computer; font-size:20px; background-color:#ff0000">LEARN MORE</a>
+                <a href="https://thunderstore.io/c/lethal-company/p/Skeleton_Studios/Welcome_To_Ooblterra/" class="button" style="font-family:computer; font-size:20px; background-color:#00ff00">PLAY NOW</a>
+              </div>
+            </section>
 
-            </main>
-        </div>
+          </main>
+      </div>
     </body>
 </html>

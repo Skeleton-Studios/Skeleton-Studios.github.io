@@ -4,207 +4,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <head>
-      <title>On Your Hands</title>
-      <link rel="icon" type="image/x-icon" href="Images/OYHIcon.png">
+      <title>Skeleton Studios</title>
+      <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
     </head>
-    
+  
     <body>
         <style>
-        * {box-sizing: border-box}
-         @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
-         @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
-
-         /* Style the navbar */
-        #navbar {
-          width: 100%;
-          background-color: #000000;
-          overflow: auto;
-        }
-
-        /* Navbar links */
-        #navbar a {
-          float: left;
-          padding: 12px;
-          color: white;
-          text-decoration: none;
-          font-size: 40px;
-          width: 25%; /* Four links of equal widths */
-          text-align: center;
-          font-family: oyh_human;   
-        }
-
-        /* Add a background color on mouse-over */
-        #navbar a:hover {
-          color: red;
-          
-        }
-        #navbar a:hover .tooltip{
-            display: block;
-        }
-
-        /* Style the current/active link */
-        #navbar a.active {
-           color: #aa0000;
-        }
-        #navbar a.highlighted {
-            color: green;
-        }
-
-        #navbar a.active:hover {
-           color: #ff0000;
-           
-        }
-        #navbar a.highlighted:hover {
-            color: #00ff00;
-            
-        }
-
-        @media screen and (max-width: 500px) {
-        #navbar a {
-          float: none;
-          display: block;
-          width: 100%;
-          text-align: left;
+          @import url('StyleSheet.css');
+          h1 {
+            font-family: oyh_human;
+            color: white;
+            padding-left:95px;
+            font-size: 50px;
           }
-        }
 
-
-        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-        .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-
-        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-        .sticky + .content {
-          padding-top: 60px;
-        } 
-         
-        body {
-          background-color: #171717;
-          margin: 0px;
-        }
-        h1 {
-          font-family: oyh_human;
-          color: white;
-          padding-left:95px;
-          font-size: 50px;
-        }
-
-        p {
-            font-family: verdana;
-            font-size: 20px;
-            color: #aaaaaa;
-        }
-        .center-logo {
-          display: block;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          padding-left: 0px;
-          padding-right: 0px;
-          margin-left: auto;
-          margin-right: auto;
-          width: 30%;
-        }
-
-        .center{
-          padding-top: 20px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-        }
- 
-        footer {
-          text-align: center;
-          padding: 100px;
-          background-color: Black;
-          color: white;
-        }
-        .box {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 10px 2em;
-        }
-
-        .box :first-child {
-            align-self: center;
-        }        
-        .center-video{
-          padding-top: 20px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        
-        hr {
-            width: 90%;
+          .center-video{
+            padding-top: 20px;
+            display: block;
             margin-left: auto;
             margin-right: auto;
-        }
-        
-        .row {
-          display: -ms-flexbox; /* IE10 */
-          display: flex;
-          -ms-flex-wrap: wrap; /* IE10 */
-          flex-wrap: wrap;
-          padding: 0 4px;
-        }
+          }
+          
+          hr {
+              width: 90%;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          
+          .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
 
 
-        /* Create four equal columns that sits next to each other */
-        .column {
-          -ms-flex: 25%; /* IE10 */
-          flex: 25%;
-          max-width: 100%;
-          padding: 0 4px;
-        }
+          /* Create four equal columns that sits next to each other */
+          .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 100%;
+            padding: 0 4px;
+          }
 
-        .column img {
-          margin-top: 8px;
-          vertical-align: middle;
-          width: 100%;
-        }  
-        
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }  
+          
         </style>
         
-        <div style="background-color:#000000" id="logo">
-          <img src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/Images/OYHLogo.png" alt="OYH Logo" class="center-logo">  
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
+          </a>
         </div>
-
-        <div id="navbar">
-          <a href="index.html">About</a>
-          <a class="highlighted" href="playnow.html">Play Now!</a>
-          <a href="devlog.html">Dev Log</a>
-          <a class="active">Contact</a>
+        <div class="navbar">
+          <div class="dropdown">
+            <button onclick="clickfunction()" class="dropbtn">GAMES</button>
+            <div class="dropdown-content">
+              <a href="On_Your_Hands.html">ON YOUR HANDS</a>
+              <a href="Welcome_To_Ooblterra.html">WELCOME TO OOBLTERRA</a>
+              <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
+            </div>
+          </div> 
+          <a href="index.html">ABOUT</a>
+          <a href="devlog.html">DEV LOG</a>
+          <a href="contact.html">CONTACT</a>
         </div> 
-
         <script>
-            // When the user scrolls the page, execute myFunction
-            window.onscroll = function() {myFunction()};
+          // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
 
-            // Get the navbar
-            var navbar = document.getElementById("navbar");
-            var logo = document.getElementById("logo");
+          // Get the navbar
+          var navbar = document.getElementById("navbar");
+          var logo = document.getElementById("logo");
 
-            // Get the offset position of the navbar
-            var sticky = navbar.offsetTop;
-            var logooffset = logo.offsetTop;
+          // Get the offset position of the navbar
+          var sticky = navbar.offsetTop;
+          var logooffset = logo.offsetTop;
 
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-                if (window.pageYOffset >= logooffset) {
-                logo.classList.add("logooffset")
-              } else {
-                logo.classList.add("logooffset")
-              }
-            }             
+          // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+              if (window.pageYOffset >= logooffset) {
+              logo.classList.add("logooffset")
+            } else {
+              logo.classList.add("logooffset")
+            }
+          }     
+          function clickfunction() {
+            window.open("OurGames.html","_self")
+          }             
         </script>
 
 
@@ -395,4 +292,5 @@
             
         </div>
     </body>
+
 </html>
