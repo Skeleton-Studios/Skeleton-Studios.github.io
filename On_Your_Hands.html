@@ -4,76 +4,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <head>
-    <title>Skeleton Studios</title>
-    <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
+    <title>On Your Hands</title>
+    <link rel="icon" type="image/x-icon" href="Images/OYHIcon.png">
   </head>
     
   <body>
-      <style>
+    <style>
       @import url('StyleSheet.css');
-      </style>
-      <div class="logo">
-        <a href="index.html">
-          <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
-        </a>
-      </div>
-      <div class="navbar">
-        <div class="dropdown">
-          <button onclick="clickfunction()" class="dropbtn">GAMES</button>
-          <div class="dropdown-content">
-            <a class="active">ON YOUR HANDS</a>
-            <a href="Welcome_To_Ooblterra.html">WELCOME TO OOBLTERRA</a>
-            <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
-          </div>
-        </div> 
-        <a class="highlighted" href="playnow.html">ABOUT</a>
-        <a href="devlog.html">DEV LOG</a>
-        <a href="contact.html">CONTACT</a>
-      </div> 
-      <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-        var logo = document.getElementById("logo");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-        var logooffset = logo.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-            if (window.pageYOffset >= logooffset) {
-            logo.classList.add("logooffset")
-          } else {
-            logo.classList.add("logooffset")
-          }
-        } 
-        function clickfunction() {
-          window.open("OurGames.html","_self")
-        }     
-      </script>
-
-      <video class="center-logo" controls>
-        <source src="https://raw.githubusercontent.com/Skeleton-Studios/Skeleton-Studios.github.io/main/trailer.mp4" type="video/mp4"> 
-      Your browser does not support the video tag.
-      </video> 
-
-      <div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      </p>
+    </style>
+    <div class="logo" style="background-color: black;">
+      <a href="index.html">
+        <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
+      </a>
     </div>
+    <div class="navbar" style="background-color: black;">
+      <div class="dropdown">
+        <button onclick="clickfunction()" class="dropbtn">GAMES</button>
+        <div class="dropdown-content">
+          <a class="active" style="color:red">ON YOUR HANDS</a>
+          <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
+          <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
+        </div>
+      </div> 
+      <a class="highlighted" href="OurGames.html">ABOUT</a>
+      <a href="devlog.html">DEV UPDATES</a>
+      <a href="contact.html">CONTACT</a>
+    </div> 
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      var logo = document.getElementById("logo");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      var logooffset = logo.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+          if (window.pageYOffset >= logooffset) {
+          logo.classList.add("logooffset")
+        } else {
+          logo.classList.add("logooffset")
+        }
+      } 
+      function clickfunction() {
+        window.open("OurGames.html","_self")
+      }     
+    </script>
+    <div id="main"><img src="Images/mainimage.png" alt="OYH Key Art" width="100%" height="100%"></div>
+    <div>
+      <ul style="list-style: none; margin-left: -50px">
+        <li>An alien planet</li>
+        <li>20+ Levels</li>
+        <li>7 Unique Magic Abilities</li>
+        <li>Over 10 Horrific Monsters</li>
+        <li>An unforgettable experience</li>
+      </ul>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qYxQy5t1doc?si=0S6_jFJqfk7kQRIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <p style="text-align: justify; margin-left: 20%; margin-right: 20%;">
+        <span style="color: red;">On Your Hands</span> is a puzzle-horror adventure set on the alien planet of Ooblterra; a strange world shrouded in mystery and fear.  Discover the quirks and features of seven unique magical abilities across a litany of interesting locations, as you learn the truth of this world and try and find your way back to earth.
+    </div>
+    </p>
+    <div id="OYHDemo">
+      <br><br><h1 style="color:#00dd00; font-family: computer; font-size:50px">TRY IT OUT</h1>
+    </div>
+    <p style="text-align: center;"><span style="font-family:computer; ">Try <span style="color: red;">On Your Hands&#39;</span> first four levels free in this extensive demo.</p><br>
+    <div class="container">
+      <div class="cntr">
+        <a href="https://github.com/Skeleton-Studios/Skeleton-Studios.github.io/releases/download/demo2/On_Your_Hands-Full_Release_Demo.zip" class="button" style="font-family:computer; font-size:20px;">Download Now</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="cntr">
+          <a href="steam://install/1708380" class="button" style="font-family:computer; font-size:20px; background-color:#065a79;">Play on Steam</a>
+      </div>
+    </div>
+    <div id="screenshots">
+      <br><br><h1 style=" font-family: computer; font-size:50px">SCREENSHOTS</h1>
+    </div>
+    <div class="row" style="margin-left:80px;margin-right:90px">
+      <div class="column">
+        <img src="Images/SteamScreenshot1.png" style="width:100%">
+        <img src="Images/SteamScreenshot2.png" style="width:100%">
+        <img src="Images/SteamScreenshot3.png" style="width:100%">  
+        <img src="Images/SteamScreenshot4.png" style="width:100%">                    
+      </div>
+      <div class="column">
+        <img src="Images/SteamScreenshot5.png" style="width:100%">
+        <img src="Images/SteamScreenshot6.png" style="width:100%">       
+        <img src="Images/SteamScreenshot7.png" style="width:100%">
+        <img src="Images/SteamScreenshot8.png" style="width:100%">                    
+      </div>
+      <div class="column">
+        <img src="Images/SteamScreenshot9.png" style="width:100%">   
+        <img src="Images/SteamScreenshot10.png" style="width:100%">
+        <img src="Images/SteamScreenshot11.png" style="width:100%">
+        <img src="Images/SteamScreenshot12.png" style="width:100%">                      
+      </div>    
+      <div class="column">
+        <img src="Images/SteamScreenshot13.png" style="width:100%">
+        <img src="Images/SteamScreenshot14.png" style="width:100%">
+        <img src="Images/SteamScreenshot15.png" style="width:100%">        
+      </div>                    
+    </div>
+    <div id="Players">
+      <br><br><h1 style=" font-family: computer; font-size:50px">PLAYER RESPONSES</h1>
+
+    </div>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
   </body>
 </html>

@@ -11,18 +11,27 @@
         }
         h1 {
           font-family: oyh_human;
-          color: white;
-          font-size: 35vw;
+          color: rgb(255, 255, 255);
+          font-size: 40px;
+          text-align: center;
           margin-left: auto;
           margin-right: auto;
         }
-
         p {
-            font-family: verdana;
+            font-family: computer;
             font-size: 20px;
             color: #aaaaaa;
         }
         
+        li {
+          
+          text-align: center;
+          
+          font-family: computer;
+          font-size: 25px;
+          color: #aaaaaa;        
+        }
+
         /* LOGO STUFF */
         .center-logo {
           margin-left: auto;
@@ -179,3 +188,27 @@
           height: 20%;
 
         }
+        /* Image Stuff */
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 100%;
+          padding: 0 4px;
+        }
+
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }  
+        

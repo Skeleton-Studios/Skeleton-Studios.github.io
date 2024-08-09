@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <head>
+    <title>Welcome To Ooblterra</title>
+    <link rel="icon" type="image/x-icon" href="Images/wtoicon.png">
+  </head>
+    
+  <body>
+    <style>
+      @import url('StyleSheet.css');
+    </style>
+    <div class="logo" style="background-color: black;">
+      <a href="index.html">
+        <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
+      </a>
+    </div>
+    <div class="navbar" style="background-color: black;">
+      <div class="dropdown">
+        <button onclick="clickfunction()" class="dropbtn">GAMES</button>
+        <div class="dropdown-content">
+          <a href="On_Your_Hands.html#main">ON YOUR HANDS</a>
+          <a class="active" style="color:#00ccaa">WELCOME TO OOBLTERRA</a>
+          <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
+        </div>
+      </div> 
+      <a class="highlighted" href="OurGames.html">ABOUT</a>
+      <a href="devlog.html">DEV UPDATES</a>
+      <a href="contact.html">CONTACT</a>
+    </div> 
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      var logo = document.getElementById("logo");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      var logooffset = logo.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+          if (window.pageYOffset >= logooffset) {
+          logo.classList.add("logooffset")
+        } else {
+          logo.classList.add("logooffset")
+        }
+      } 
+      function clickfunction() {
+        window.open("OurGames.html","_self")
+      }     
+    </script>
+    <div id="main"><img src="Images/mainimage.png" alt="OYH Key Art" width="100%" height="100%"></div>
+    <div>
+      <ul style="list-style: none; margin-left: -50px">
+        <li>A new Moon</li>
+        <li>A new Interior</li>
+        <li>7 new Enemy Types</li>
+        <li>4 new Map Hazards</li>
+        <li>10+ New Scrap</li>
+        <li>And more!</li>
+      </ul>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D0CR-QIVKeI?si=GjKpfk0b4GscqIl5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <p style="text-align: justify; margin-left: 20%; margin-right: 20%;">
+        <span style="color: #00ccaa;">Welcome to Ooblterra</span> is a fanmade Expansion Pack for <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" target=”_blank”>Lethal Company</a>, adding an endgame-tier moon based on Skeleton Studios' own <span style="color: red;">On Your Hands</span>. With lots of new and interesting features to discover, lots of enemies, and incredible scrap prices, WTO is a great mod for anyone looking for an endgame-level challenge.
+    </div>
+    </p>
+    <div id="WTOPlayNow">
+      <br><br><h1 style="color:#00dd00; font-family: computer; font-size:50px">PLAY IT NOW</h1>
+    </div>
+    
+    <div class="container">
+      <div class="cntr">
+        <a href="ror2mm://v1/install/thunderstore.io/Skeleton_Studios/Welcome_To_Ooblterra/1.1.0/" class="button" style="font-family:computer; font-size:20px;">Install Via Mod Manager</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="cntr">
+          <a href="https://thunderstore.io/c/lethal-company/p/Skeleton_Studios/Welcome_To_Ooblterra/" target=”_blank” class="button" style="font-family:computer; font-size:20px; background-color:#065a79;">View on Thunderstore</a>
+      </div>
+    </div>
+    <div id="screenshots">
+      <br><br><h1 style=" font-family: computer; font-size:50px">SCREENSHOTS</h1>
+    </div>
+    <div class="row" style="margin-left:80px;margin-right:90px">
+      <div class="column">
+        <img src="images/gd6ovBV.png" style="width:100%">
+        <img src="Images/NVg8zPy.png" style="width:100%">
+             
+      </div>
+      <div class="column">
+        <img src="Images/smjBgvQ.png" style="width:100%">      
+        <img src="Images/HEsCGsU.png" style="width:100%">                        
+      </div>
+      <div class="column">
+        <img src="Images/gSxe0us.png" style="width:100%">    
+        <img src="Images/Qc4DT9h.png" style="width:100%">           
+      </div>    
+      <div class="column">
+        <img src="Images/ZtKEQCl.png" style="width:100%">    
+        <img src="Images/RezFMab.png" style="width:100%"> 
+      </div>                    
+    </div>
+    <div id="Players">
+      <br><br><h1 style=" font-family: computer; font-size:50px">PLAYER RESPONSES</h1>
+
+    </div>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </body>
+</html>
