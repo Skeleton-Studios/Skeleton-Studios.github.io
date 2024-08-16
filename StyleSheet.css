@@ -158,6 +158,10 @@
           font-size:20px; 
         }
 
+
+	.button:hover{
+	  color:grey;
+	}
         .container { 
           height: 25px;
           position: relative;
@@ -166,6 +170,13 @@
         .cntr {
           margin: 0;
           position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        .cntr2 {
+          margin: 0;
           top: 50%;
           left: 50%;
           -ms-transform: translate(-50%, -50%);
