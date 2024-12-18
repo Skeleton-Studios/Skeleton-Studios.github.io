@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <head>
+    <title>Delta Perspective</title>
+    <link rel="icon" type="image/x-icon" href="Images/deltap_icon.png">
+  </head>
+    
+  <body>
+    <style>
+      @import url('StyleSheet.css');
+      .dropdown-menu-center {
+        left: 50% !important;
+        right: auto !important;
+        text-align: center !important;
+        transform: translate(-50%, 0) !important;
+      }
+    </style>
+    <div class="logo" style="background-color: black;">
+      <a href="index.html">
+        <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
+      </a>
+    </div>
+    <div class="navbar" style="background-color: black;">
+      <div class="dropdown">
+        <button onclick="clickfunction()" class="dropbtn">GAMES</button>
+        <div class="dropdown-content">
+          <a class="On_Your_Hands.html#main" >ON YOUR HANDS</a>
+          <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
+		  <a class="active" style="color:#DDDD00">DELTA PERSPECTIVE</a>
+          <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
+        </div>
+      </div> 
+      <a class="highlighted" href="index.html">ABOUT</a>
+      <a href="devlog.html">NEWSLETTER</a>
+      <a href="contact.html">CONTACT</a>
+    </div> 
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      var logo = document.getElementById("logo");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      var logooffset = logo.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+          if (window.pageYOffset >= logooffset) {
+          logo.classList.add("logooffset")
+        } else {
+          logo.classList.add("logooffset")
+        }
+      } 
+      function clickfunction() {
+        window.open("OurGames.html","_self")
+      }     
+    </script>
+	<script type="text/javascript">
+    window.omnisend = window.omnisend || [];
+    omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
+    omnisend.push(["track", "$pageViewed"]);
+    !function(){var e=document.createElement("script");
+    e.type="text/javascript",e.async=!0,
+    e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+    var t=document.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(e,t)}();
+  </script>
+    <div id="main"><img src="Images/deltaP_Main.png" alt="Delta Perspective Key Art" width="100%" height="100%"></div>
+    <div>
+      <ul style="list-style: none; margin-left: -50px">
+        <li>A Dark Mine</li>
+        <li>Dense, Secret-filled Levels</li>
+        <li>Tactile Weapons</li>
+        <li>3 Player Characters</li>
+        <li>And Many POVs</li>
+      </ul>
+    </div>
+  		<div style="text-align: center;">
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2d4TuG_s0DM" title="Delta Perspective DEMO Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		</div>
+    <div>
+      <p style="text-align: justify; margin-left: 20%; margin-right: 20%;">
+	    <span style="color: #DDDD00;">Delta Perspective</span> is a survival horror game set in the D-3 Mining Facility. Delve deep into an experience to discover terrifying enemies, heavy weapons, and exciting perspectives.
+      </p>
+    </div>
+    <div id="DeltaPDemo">
+      <br><br><h1 style="color:#00dd00; font-family: computer; font-size:50px">TRY IT OUT</h1>
+    </div>
+    <p style="text-align: center;"><span style="font-family:computer; ">Try <span style="color: #DDDD00;">Delta Perspective</span>&#39;s first level free in this demo.</p><br>
+    <div class="container">
+      <div class="cntr">
+        <a href="https://github.com/Skeleton-Studios/Skeleton-Studios.github.io/releases/download/demo2/On_Your_Hands-Full_Release_Demo.zip" class="button" style="font-family:computer; font-size:20px;">Download Now</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="cntr">
+          <a href="steam://install/3388370" class="button" style="font-family:computer; font-size:20px; background-color:#065a79;">Play on Steam</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="cntr">
+        <div class="dropdown">
+          <div class="dropbtn" style="width:260px; text-align:center; background-color:#00ee00; border-radius: 8px;  font-size: 20px;">PURCHASE FULL GAME</div>
+          <div class="dropdown-content" style="margin-left: 20%;">
+            <a>COMING SOON!</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+
+  </body>
+</html>
