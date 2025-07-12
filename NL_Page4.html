@@ -1,0 +1,271 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <head>
+      <title>Newsletter #4</title>
+      <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
+    </head>
+    <body>
+      <style>
+        @import url('StyleSheet.css');
+        * {box-sizing: border-box}
+         @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
+         @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
+
+         /* Style the navbar */
+        #navbar {
+          width: 100%;
+          background-color: #000000;
+          overflow: auto;
+        }
+
+        /* Navbar links */
+        #navbar a {
+          float: left;
+          padding: 12px;
+          color: white;
+          text-decoration: none;
+          font-size: 40px;
+          width: 25%; /* Four links of equal widths */
+          text-align: center;
+          font-family: oyh_human;   
+        }
+
+        /* Add a background color on mouse-over */
+        #navbar a:hover {
+          color: red;
+          
+        }
+        #navbar a:hover .tooltip{
+            display: block;
+        }
+
+        /* Style the current/active link */
+        #navbar a.active {
+           color: #aa0000;
+        }
+        #navbar a.highlighted {
+            color: green;
+        }
+
+        #navbar a.active:hover {
+           color: #ff0000;
+           
+        }
+        #navbar a.highlighted:hover {
+            color: #00ff00;
+            
+        }
+
+        @media screen and (max-width: 500px) {
+        #navbar a {
+          float: none;
+          display: block;
+          width: 100%;
+          text-align: left;
+          }
+        }
+
+
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+          padding-top: 60px;
+        } 
+         
+        body {
+          background-color: #171717;
+          margin: 0px;
+        }
+        h1 {
+          font-family: oyh_human;
+          color: white;
+          text-align: center;
+          font-size: 40px;
+        }
+        h2 {
+          font-family: computer;
+          text-align: center;
+          font-size: 30px;
+        }
+        p {
+          font-family: computer;
+          font-size: 22px;
+          color: #aaaaaa;
+          text-align: center;
+          margin-left:40px;
+          margin-right:40px;
+        }
+        a {
+          font-family: computer;
+          font-size: 22px;
+        }
+        span {
+          font-family: computer;
+          font-size: 22px;
+          color: #aaaaaa;
+          text-align: justify;
+
+        }
+        .center{
+          margin-top:40px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 30%;
+        }
+        
+        .center-text{
+          margin-top:20px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 80%;
+        }
+        .TopDiv {
+          border: 5px outset rgba(241, 241, 241, 0);
+          background-color: rgb(4, 94, 24);    
+          text-align: center;
+          margin-left: 1%;
+          margin-right: 1%;
+          border-radius: 8px;
+        }
+        .PageBack {
+          border: 5px outset rgba(241, 241, 241, 0);
+          background-color: rgb(1, 34, 43);    
+          text-align: center;
+          margin-left: 8%;
+          margin-right: 8%;
+          border-radius: 8px;
+        }
+        .text-and-image {
+          display: flex;
+          justify-content: space-between;
+          align-items:center;
+        }
+        .rightimg {
+          margin-right: 2%;
+          border-radius: 8px;
+        }
+        .leftimg {
+          margin-left: 2%;
+          border-radius: 8px;
+        }
+      </style>
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
+        </a>
+      </div>
+      <div class="navbar">
+        <div class="dropdown">
+          <button onclick="clickfunction()" class="dropbtn">GAMES</button>
+          <div class="dropdown-content">
+            <a href="On_Your_Hands.html#main">ON YOUR HANDS</a>
+            <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
+		    <a href="Delta_Perspective.html#main">DELTA PERSPECTIVE</a>
+            <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
+          </div>
+        </div> 
+          <a href="index.html">ABOUT</a>
+          <a class="active" href="devlog.html">NEWSLETTER</a>
+          <a href="contact.html">CONTACT</a>
+      </div> 
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+        var logo = document.getElementById("logo");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        var logooffset = logo.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+            if (window.pageYOffset >= logooffset) {
+            logo.classList.add("logooffset")
+          } else {
+            logo.classList.add("logooffset")
+          }
+        } 
+        function clickfunction() {
+          window.open("OurGames.html","_self")
+        }            
+      </script>
+      <script type="text/javascript">
+        window.omnisend = window.omnisend || [];
+        omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
+        omnisend.push(["track", "$pageViewed"]);
+        !function(){var e=document.createElement("script");
+        e.type="text/javascript",e.async=!0,
+        e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+        var t=document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e,t)}();
+      </script>
+      <div class="PageBack">
+        <div class="TopDiv">
+          <h1>#4: Arsenal Expansion</h1>
+          <p>07-12-2025</p>
+		  <p>by: Bree, EchoSem</p>
+        </div>
+        <p style="text-align: justify;">Hello morons,
+
+in the time since our last newsletter, we’ve been very busy working on a few new things.
+<br>
+We’ll show off more of the things we’ve been working on at a later date, but today is all about our progress on a new playable character; <span style="color: #DDDD00;">The Negotiator! </span>
+
+The Negotiator dispatches any threats she may run across in the D-3 Mines with her trusty pump-action shotgun.</p>
+
+		<h2>RELOAD</h2>
+
+		<p style="text-align: justify;"> <span style="color: #DDDD00;">Load</span> your shells: hold the Reload button, grab a shell from the bottom left, and then push it into the magazine..</p>
+
+		<img src="Images/loading.gif" width="960" height="540"></img>
+
+		<h2>PUMP</h2>
+
+		<p style="text-align: justify;"> <span style="color: #DDDD00;">Pump</span> the shotgun: Scroll your mouse wheel back, and then forward again. </p>
+
+		<img src="Images/pump.gif" width="960" height="540"></img>
+
+		<h2>FIRE</h2>
+
+		<p style="text-align: justify;"> <span style="color: #DDDD00;">Fire</span> the shotgun: Neutralize the target. </p>
+
+		<img src="Images/fire.gif" width="960" height="540"></img>
+		<br>
+		<br>
+		<p>Play the game through your perspective<span style="color:#00ff00"> next halloween.</span></p>
+		<span style="color: #DDDD00;"><h2>Delta Perspective</h2></span>
+		<h2>October 31st 2026</h2>
+		<p><div style="opacity: 25%">probably...</div></p>
+				<div class="container">
+			  <div style="text-align: center;">
+			  <a href="https://github.com/Skeleton-Studios/Skeleton-Studios.github.io/releases/download/DeltaP-Demo2/Steam_Demo_v6_Gold.zip" target=”_blank” class="button" style="font-family:computer; font-size:20px; background-color:#DDDD00">DOWNLOAD NOW</a>
+				<a href="steam://install/3388370" class="button" style="font-family:computer; font-size:20px; background-color:rgb(6, 90, 121)">DOWNLOAD ON STEAM</a>
+				<a href="https://skeletonstudios.itch.io/delta-perspective" target=”_blank” class="button" style="font-family:computer; font-size:20px; background-color:#fa5c5c">DOWNLOAD ON ITCH.IO</a>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+      </div>
+		<br>
+		<br>
+		<br>
+    </body>
+</html>
