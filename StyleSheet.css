@@ -327,6 +327,16 @@ iframe {
   justify-content: space-between;
   align-items:center;
 }
+
+.PageBack {
+  border: 5px outset rgba(241, 241, 241, 0);
+  background-color: rgb(1, 34, 43);    
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+  border-radius: 8px;
+} 
+
 @media screen and (max-width: 800px) {
   .navbar {
     width: 100%;
@@ -466,5 +476,9 @@ iframe {
   }
   .text-and-image{
     flex-direction: column;
+  }
+  .Pageback{
+    margin-left:2%;
+    margin-right:2%;
   }
 }
