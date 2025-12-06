@@ -25,6 +25,15 @@ p {
     color: #aaaaaa;
 }
 
+p.newsletter {
+  font-family: computer;
+  font-size: 22px;
+  color: #aaaaaa;
+  text-align: center;
+  margin-left:40px;
+  margin-right:40px;
+}
+
 li {
   text-align: center;
   font-family: computer;
@@ -313,6 +322,11 @@ iframe {
   justify-content:left;
 }
 
+.text-and-image {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
 @media screen and (max-width: 800px) {
   .navbar {
     width: 100%;
@@ -346,7 +360,7 @@ iframe {
     float: none;
     width: 85vw;
     height: 48vw;
-    padding-left: 20px;
+/*     padding-left: 20px; */
   }
   .button{
   /*   padding-top:5px; 
@@ -376,6 +390,10 @@ iframe {
 @media screen and (max-width: 600px) {
   .center-logo {
     width: 60vw;
+  }
+  p.newsletter {
+    margin-left:5px;
+    margin-right: 5px;
   }
   .main{
     flex-direction: column-reverse;
@@ -446,5 +464,7 @@ iframe {
   .mobileOnly{
     display: block;
   }
-
+  .text-and-image{
+    flex-direction: column;
+  }
 }
