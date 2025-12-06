@@ -1,8 +1,8 @@
 
 
-  @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
-  @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
-  
+@font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
+@font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
+
 body {
   background-color: rgb(23, 23, 23);
   margin: 0px;
@@ -26,13 +26,13 @@ p {
 }
 
 p.newsletter {
-  font-family: computer;
   font-size: 22px;
-  color: #aaaaaa;
   text-align: center;
   margin-left:40px;
   margin-right:40px;
 }
+
+
 
 li {
   text-align: center;
@@ -231,8 +231,22 @@ footer {
 
 .rightIMG{
   float:right;
-  width: 40vw;
-  height: 22.5vw;
+  aspect-ratio: 16 / 9; 
+  height: 150%; 
+  width: 150%;
+  max-width: 48%;
+}
+.leftIMG{
+  float:right;
+  aspect-ratio: 16 / 9; 
+  height: 150%; 
+  width: 150%;
+  max-width: 48%;
+}
+
+.centerIMG{
+  aspect-ratio: 16/9;
+   width: 100%;
 }
 
 video {
@@ -326,6 +340,8 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items:center;
+  margin-left:40px;
+  margin-right:40px;
 }
 
 .PageBack {
@@ -367,10 +383,10 @@ iframe {
     width: 90%;
   }
   .rightIMG{
-    float: none;
-    width: 85vw;
-    height: 48vw;
-/*     padding-left: 20px; */
+    max-width: 100%;
+  }
+  .leftIMG{
+    max-width: 100%;
   }
   .button{
   /*   padding-top:5px; 
@@ -392,6 +408,14 @@ iframe {
   .Screenshots{
     margin-left:80px;
     margin-right:90px
+  }
+  .Pageback{
+    margin-left:2%;
+    margin-right:2%;
+  }
+  .text-and-image{
+    flex-direction: column;
+    margin: 0px 5px;
   }
 }
 
@@ -474,11 +498,6 @@ iframe {
   .mobileOnly{
     display: block;
   }
-  .text-and-image{
-    flex-direction: column;
-  }
-  .Pageback{
-    margin-left:2%;
-    margin-right:2%;
-  }
+
+
 }
