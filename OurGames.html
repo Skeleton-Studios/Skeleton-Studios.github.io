@@ -73,7 +73,7 @@
     <div class='GamesList'>
       <!--DELTA PERSPECTIVE-->
       <section class='textSection'>
-        <span style="color: #DDDD00; font-size:38px; font-family:oyh_human;">DELTA PERSPECTIVE</span>
+        <span style="color: #DDDD00; font-size:38px; font-family:oyh_human;">Delta Perspective</span>
         <p style="font-family:computer; font-size:22px;text-align: justify;">
           <br>
           <span style="font-size:15px;">RELEASE: October 31st, 2026</span>
@@ -94,7 +94,7 @@
         <video src="Images/WTO_trailer.mp4" type="video/mp4" controls></video>
       </section>
       <section class='textSection2'>
-        <span style="color: #00ccaa; font-size:38px; font-family:oyh_human;">WELCOME TO OOBLTERRA</span>
+        <span style="color: #00ccaa; font-size:38px; font-family:oyh_human;">Welcome to Ooblterra!</span>
         <p style="font-family:computer; font-size:22px;text-align: justify;">
           <br>
           <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">RELEASED: MAY 2024</span>
@@ -117,7 +117,7 @@
         </p>
         <div class="button-holder" style=" text-align: right;">
           <div class="dropdown">
-            <div class="dropbtn" style="width:auto; background-color:#00ee00; border-radius: 8px; padding: 15px 32px; font-size: 20px; margin-right: 5px;">BUY NOW</div>
+            <div class="dropbtn" style="width:auto; background-color:#00ee00; border-radius: 8px; padding: 15px 32px; font-size: 20px; margin-right: 5px;" onclick="BuyGame('https\://store.steampowered.com/app/1708200/On_Your_Hands/')">BUY NOW</div>
             <div class="dropdown-content">
               <a href="https://store.steampowered.com/app/1708200/On_Your_Hands/" target=”_blank” style="font-family:computer;">STEAM</a>
               <a href="https://skeletonstudios.itch.io/on-your-hands" target=”_blank” style="font-family:computer;">ITCH.IO</a>
@@ -135,6 +135,12 @@
     <br>
     <br>
     <script type="text/javascript">
+      function BuyGame(string){
+        if(window.innerWidth > 600){
+          return;
+        }         
+        window.open(string, '_blank')
+      }
       window.omnisend = window.omnisend || [];
       omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
       omnisend.push(["track", "$pageViewed"]);
