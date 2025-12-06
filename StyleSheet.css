@@ -80,6 +80,12 @@ footer {
   font-family: computer;   
   width: 25vw;
 }
+.navbar a.uncollapsed {
+  text-align: center; 
+  display: block; 
+  float: none;
+  background-color:hwb(0 13 87);
+}
 .navbar a.active {
   color: #00ff00;
 }
@@ -110,6 +116,7 @@ footer {
   background-color: inherit;
   font-family: computer;   
   width: 25vw;
+  cursor: pointer;
 }
 
 
@@ -277,6 +284,11 @@ video {
   width: 100%;
 }  
 
+.collapsed {
+  display:none;
+}
+
+
 @media screen and (max-width: 800px) {
   .navbar {
     width: 100%;
@@ -363,5 +375,14 @@ video {
   }
   .button-holder{
     text-align: right;
+  }
+  .dropdown:hover .dropdown-content{
+    display:none;
+  }
+  .dropbtn{
+    z-index: 1;
+  }
+  .dropbtn-active:active{
+    color: #ffffff;
   }
 }

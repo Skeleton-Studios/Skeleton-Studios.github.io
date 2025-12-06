@@ -1,0 +1,34 @@
+<div class="navbar">
+    <div class="dropdown">
+    <button class="dropbtn-active" onclick="ShowDropdownMobile()">GAMES</button>
+    <div class="dropdown-content">
+        <a href="On_Your_Hands.html#main">ON YOUR HANDS</a>
+        <a href="Welcome_To_Ooblterra.html#main">Welcome To Ooblterra!</a>
+        <a href="Delta_Perspective.html#main">Delta Perspective</a>
+        <a href="Project_Freezer.html">Upcoming Projects...</a>
+    </div>
+    </div> 
+    <div id= "hiddenDropDown1" class="collapsed">
+    <a href="On_Your_Hands.html#main" class="uncollapsed">ON YOUR HANDS</a>
+    <a href="Welcome_To_Ooblterra.html" class="uncollapsed">Welcome To Ooblterra!</a>
+    <a href="Delta_Perspective.html" class="uncollapsed">Delta Perspective</a>
+    <a href="Project_Freezer.html" class="uncollapsed">Upcoming Projects...</a>
+    </div>
+    <a href="index.html">ABOUT</a>
+    <a href="devlog.html">NEWSLETTER</a>
+    <a href="contact.html">CONTACT</a>
+</div> 
+
+<script type="text/javascript">
+    function ShowDropdownMobile() {
+    var content = document.getElementById('hiddenDropDown1');
+    if(window.innerWidth > 600){
+        return;
+    } 
+    if (content.classList.contains('collapsed')) {
+        content.classList.remove('collapsed');
+        return;
+    }  
+    content.classList.add('collapsed');
+    }
+</script>
