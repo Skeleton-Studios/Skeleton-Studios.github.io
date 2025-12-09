@@ -23,6 +23,8 @@ p {
   font-family: computer;
   font-size: 22px;
   color: #aaaaaa;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 p.newsletter {
