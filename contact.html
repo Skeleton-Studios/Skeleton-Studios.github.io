@@ -11,71 +11,7 @@
     <body>
         <style>
         @import url('StyleSheet.css');
-        * {box-sizing: border-box}
-         @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
-         @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
 
-         /* Style the navbar */
-        #navbar {
-          width: 100%;
-          background-color: #000000;
-          overflow: auto;
-        }
-
-        /* Navbar links */
-        #navbar a {
-          float: left;
-          padding: 12px;
-          color: white;
-          text-decoration: none;
-          font-size: 40px;
-          width: 25%; /* Four links of equal widths */
-          text-align: center;
-          font-family: oyh_human;   
-        }
-
-        /* Add a background color on mouse-over */
-        #navbar a:hover {
-          color: red;
-          
-        }
-        #navbar a:hover .tooltip{
-            display: block;
-        }
-
-        /* Style the current/active link */
-        #navbar a.active {
-           color: #aa0000;
-        }
-        #navbar a.highlighted {
-            color: green;
-        }
-
-        #navbar a.active:hover {
-           color: #ff0000;
-           
-        }
-        #navbar a.highlighted:hover {
-            color: #00ff00;
-            
-        }
-
-        @media screen and (max-width: 500px) {
-        #navbar a {
-          float: none;
-          display: block;
-          width: 100%;
-          text-align: left;
-          }
-        }
-
-
-        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-        .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
 
         /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
         .sticky + .content {
