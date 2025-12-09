@@ -433,7 +433,7 @@ iframe .newsletter {
 
 @media screen and (max-width: 600px) {
   .center-logo {
-    width: 60vw;
+    width: 100vw;
   }
   p.newsletter {
     margin-left:5px;
