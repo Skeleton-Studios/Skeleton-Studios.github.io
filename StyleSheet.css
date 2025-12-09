@@ -191,8 +191,9 @@ footer {
 .button-holder{
   position: relative;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 0.2em;
 }
 
 .cntr {
@@ -217,7 +218,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-left: 5vw; 
+  margin-right: 5vw; 
+  gap: 25px;
 }
 
 .GamesList{
@@ -232,9 +235,8 @@ footer {
 .rightIMG{
   float:right;
   aspect-ratio: 16 / 9; 
-  height: 150%; 
-  width: 150%;
-  max-width: 48%;
+  height: 100%; 
+  width: 100%;
 }
 .leftIMG{
   float:right;
