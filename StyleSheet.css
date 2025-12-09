@@ -398,10 +398,6 @@ iframe .newsletter {
   .leftIMG{
     max-width: 100%;
   }
-  .button{
-  /*   padding-top:5px; 
-      margin-top:5px;*/
-  } 
   .dropdown-content {
     width: 100vw;
   }
@@ -429,8 +425,6 @@ iframe .newsletter {
   }
 }
 
-
-
 @media screen and (max-width: 600px) {
   .center-logo {
     width: 100vw;
@@ -439,7 +433,8 @@ iframe .newsletter {
     margin-left:5px;
     margin-right: 5px;
     text-align: justify;
-    text-justify:distribute;
+    text-justify:distribute
+  }
   .main{
     flex-direction: column-reverse;
   }
