@@ -116,6 +116,7 @@ footer {
   font-family: computer;   
   width: 25vw;
   cursor: pointer;
+  text-align: center;
 }
 
 .dropdown .dropbtn-active {
@@ -196,6 +197,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.2em;
+  margin-bottom: 2vw;
 }
 
 .cntr {
@@ -290,11 +292,12 @@ video {
 
 /* Image Stuff */
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
-/*   padding: 0 4px; */
+  padding: 0 10px; 
+  gap: 4px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -438,9 +441,7 @@ iframe .newsletter {
   .main{
     flex-direction: column-reverse;
   }
-  .button-holder{
-    margin-bottom: 10vw;
-  }
+
   .button-holder-left{
      justify-content: right;
   }
@@ -476,6 +477,7 @@ iframe .newsletter {
   }
   .button-holder{
     text-align: right;
+
   }
   .dropdown:hover .dropdown-content{
     display:none;
