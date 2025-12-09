@@ -223,6 +223,7 @@ footer {
   align-items: center;
   margin-left: 5vw; 
   margin-right: 5vw; 
+  margin-top: 1vw;
   gap: 25px;
 }
 
@@ -262,7 +263,7 @@ video {
 .videoSection {
   flex-basis: 45%;
   width: 40vw;
-  height: 30vw;
+  /*height: 30vw;*/
 }
 
 .videoSection2 {
