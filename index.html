@@ -11,13 +11,21 @@
     <body>
       <style>
       @import url('StyleSheet.css');
+      section.aboutUs{
+        max-width: 52vw;
+      }
+      @media screen and (max-width: 800px){
+      section.aboutUs{
+        max-width: 100%;
+      }      
+      }
+      
       </style>     
       <div class="logo">
         <img src="Images/long_logo.png" alt="Skeleton Studios Logo" class="center-logo">  
       </div>
       <main class='main'>
-
-        <section style="max-width: 800px;">
+        <section class="aboutUs">
           <p style="margin-left: 0px;">
             <span style="color: #00ff00; font-size:38px;">ABOUT US</span>
           </p>
@@ -46,7 +54,7 @@
               <a href="presskit.html" class="button" style="background-color:#00bb00">PRESS KIT</a>
               <a href="contact.html" class="button" style="background-color:#00bb00">CONTACT US</a>
             </div>
-            </p>
+            
         </div>
     </script>
     <script type="text/javascript">
