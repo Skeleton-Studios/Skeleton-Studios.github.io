@@ -333,15 +333,10 @@ video {
 
 iframe {
 	aspect-ratio: 16 / 9;
-	height: 50%;
-	width: 50%;
+	height: 30vw;
+	width: 55vw;
 }
 
-iframe .newsletter {
-  aspect-ratio: 16 / 9;
-	height: 50%;
-	width: 50%;
-}
 
 .button-holder-left{
   display: flex;
@@ -405,11 +400,6 @@ iframe .newsletter {
     width: 100vw;
   }
 
-  iframe {
-    aspect-ratio: 16 / 9;
-    height: 75%;
-    width: 75%;
-  }
   .GameDesc{
     margin-left: 10%; 
     margin-right: 10%;   
@@ -426,6 +416,11 @@ iframe .newsletter {
     flex-direction: column;
     margin: 0px 5px;
   }
+  iframe {
+    aspect-ratio: 16 / 9;
+    height: 54vw;
+    width: 95%;
+  }  
 }
 
 @media screen and (max-width: 600px) {
@@ -499,11 +494,7 @@ iframe .newsletter {
   .desktopOnly{
     display: none;
   }
-  iframe {
-    aspect-ratio: 16 / 9;
-    height: 54vw;
-    width: 95%;
-  }
+
   .GameDesc{
     margin-left: 5%; 
     margin-right: 5%;   
