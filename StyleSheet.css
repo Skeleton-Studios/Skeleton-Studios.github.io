@@ -443,7 +443,7 @@ iframe .newsletter {
     flex-direction: column-reverse;
   }
   .button-holder{
-    margin-bottom: 80px;
+    margin-bottom: 10vw;
   }
   .button-holder-left{
      justify-content: right;
