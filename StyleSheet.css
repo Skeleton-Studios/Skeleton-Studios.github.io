@@ -103,7 +103,6 @@ footer {
 /* DROPDOWN STUFF */
 .dropdown {
   float: left;
-  overflow: hidden;
   text-align: center;
 }
 .dropdown .dropbtn {
