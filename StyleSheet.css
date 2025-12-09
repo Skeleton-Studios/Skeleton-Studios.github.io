@@ -112,7 +112,6 @@ footer {
   padding: 14px 16px;
   background-color: inherit;
   font-family: computer;   
-  width: 25vw;
   cursor: pointer;
 }
 
@@ -124,7 +123,6 @@ footer {
   padding: 14px 16px;
   background-color: inherit;
   font-family: computer;   
-  width: 25vw;
   cursor: pointer;
 }
 
@@ -330,6 +328,12 @@ iframe {
 	width: 50%;
 }
 
+iframe .newsletter {
+  aspect-ratio: 16 / 9;
+	height: 50%;
+	width: 50%;
+}
+
 .button-holder-left{
   display: flex;
   margin-bottom: 80px;
@@ -485,7 +489,7 @@ iframe {
   }
   iframe {
     aspect-ratio: 16 / 9;
-    height: 95%;
+    height: 54vw;
     width: 95%;
   }
   .GameDesc{
@@ -498,6 +502,4 @@ iframe {
   .mobileOnly{
     display: block;
   }
-
-
 }
