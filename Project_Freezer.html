@@ -6,109 +6,101 @@
       <title>Games By Skeleton Studios</title>
       <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
     </head>
-    <body>
-      <style>
-        @import url('StyleSheet.css');
-      </style>     
-      <div class="logo">
-        <a href="index.html">
-          <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
-        </a>
-      </div>
-      <div class="navbar">
-        <div class="dropdown">
-          <button onclick="clickfunction()" class="dropbtn">GAMES</button>
-          <div class="dropdown-content">
-            <a href="On_Your_Hands.html#main">ON YOUR HANDS</a>
-            <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
-			      <a href="Delta_Perspective.html#main">DELTA PERSPECTIVE</a>
-            <a class="active" style="color:#00ff00">UPCOMING PROJECTS</a>
-          </div>
-        </div> 
-        <a href="index.html">ABOUT</a>
-        <a href="devlog.html">NEWSLETTER</a>
-        <a href="contact.html">CONTACT</a>
+  <body>
+    <style>
+      @import url('StyleSheet.css');
+    </style>     
+  
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
+      </a>
+    </div>
+
+    <div class="navbar">
+      <div class="dropdown">
+        <button onclick="clickfunction()" class="dropbtn">GAMES</button>
+        <div class="dropdown-content">
+          <a href="On_Your_Hands.html#main">ON YOUR HANDS</a>
+          <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
+          <a href="Delta_Perspective.html#main">DELTA PERSPECTIVE</a>
+          <a class="active" style="color:#00ff00">UPCOMING PROJECTS</a>
+        </div>
       </div> 
-      <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
+      <a href="index.html">ABOUT</a>
+      <a href="devlog.html">NEWSLETTER</a>
+      <a href="contact.html">CONTACT</a>
+    </div> 
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
 
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-        var logo = document.getElementById("logo");
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      var logo = document.getElementById("logo");
 
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-        var logooffset = logo.offsetTop;
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      var logooffset = logo.offsetTop;
 
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-            if (window.pageYOffset >= logooffset) {
-            logo.classList.add("logooffset")
-          } else {
-            logo.classList.add("logooffset")
-          }
-        } 
-        function clickfunction() {
-          window.open("OurGames.html","_self")
-        }     
-      </script>
-      <div>
-          <!--PROJECT ZIMBABWE-->
-          <main class='main' style="margin-left: 5vw;">
-            <section class='left section' style="margin-right:5vw;">
-            <br>
-              <p style="font-family:computer; font-size:22px;margin-right:150px; text-align: justify;">
-                <span style="color: #DDDD00; font-size:38px; font-family:oyh_human;">DELTA PERSPECTIVE</span>
-              </p>
-              <p style="font-family:computer; font-size:22px;text-align: justify;">
-                <span style="font-size:15px;; margin-bottom:50px;">COMING: October 31st, 2026</span>
-                </br>
-                Darkness, cold, an oppressive haze laboring your breathing - these are the few things that greeted you when you awoke in this abandoned mineshaft. The concerning thing wasn't the loud, barely human groan you heard coming from somewhere deeper in the cave; the concerning thing was that when you looked toward the noise, you could see a completely unrelated part of the room... and your view was changing without you moving your head or your eyes. It was as if your vision was being... replaced, with someone else's. For your sanity, you had to look away.
-                <br>
-                <br>
-                Inside a box nearby, you find a gun... you get the feeling it was left here for you, though you're having trouble quite getting it to work. Single shot, and convoluted as hell... but it's better than nothing.
-              </p>
-            </section>
-            <section class='right section'>
-              <video></video>
-            </section>
-          </main>
-          <!--PROJECT FREEZER-->
-          <main class='main'>
-            <section class='left section'>
-            <p style="font-family:computer; margin-left:100px;margin-right:-50px;">
-              <video></video>
-            </p>
-            </section>
-            <section class='right section'>
-              <p style="font-family:computer; font-size:22px;margin-right:150px;margin-top:-50px;margin-bottom:-30px; text-align: justify;">
-                <span style="color: #DD00DD; font-size:38px; font-family:oyh_human;"><br><br>???????????????????</span>
-              </p>
-              <p style="font-family:computer; font-size:22px;margin-right:150px;text-align: justify;">
-                <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">COMING: 2026...?</span>
-                </br>
-                In the year 2442, a solar flare launched that was big enough to knock down the worldwide electronic grid. Cell phones, power lines, the internet, sattelite systems; all stopped working. It didn't stop there... slowly but surely, the solar flare kept shooting further and further out, until it eventually took the entire sun with it. That was two years ago. The Earth is cold. The Earth is coming apart at the seams. The Earth is hopeless. We all have only a few months left before this hell freezes over. But that's not what matters to me. What matters to me is finding out what happened to the people I loved, before that time comes.
-              </p>
-            </section>
-
-          </main>
-      </div>
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+          if (window.pageYOffset >= logooffset) {
+          logo.classList.add("logooffset")
+        } else {
+          logo.classList.add("logooffset")
+        }
+      } 
+      function clickfunction() {
+        window.open("OurGames.html","_self")
+      }     
     </script>
-    <script type="text/javascript">
-      window.omnisend = window.omnisend || [];
-      omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
-      omnisend.push(["track", "$pageViewed"]);
-      !function(){var e=document.createElement("script");
-      e.type="text/javascript",e.async=!0,
-      e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
-      var t=document.getElementsByTagName("script")[0];
-      t.parentNode.insertBefore(e,t)}();
-</script>
-    </body>
+    <div>
+      <!--PROJECT ZIMBABWE-->
+      <main class='main' style="margin-left: 5vw;">
+        <section>
+          <p style="font-family:computer; font-size:22px;margin-right:150px; text-align: justify;">
+            <span style="color: #DDDD00; font-size:38px; font-family:oyh_human;">DELTA PERSPECTIVE</span>
+          </p>
+          <p>
+            <span style="font-size:15px;; margin-bottom:50px;">COMING: October 31st, 2026</span>
+            </br>
+            Darkness, cold, an oppressive haze laboring your breathing - these are the few things that greeted you when you awoke in this abandoned mineshaft. The concerning thing wasn't the loud, barely human groan you heard coming from somewhere deeper in the cave; the concerning thing was that when you looked toward the noise, you could see a completely unrelated part of the room... and your view was changing without you moving your head or your eyes. It was as if your vision was being... replaced, with someone else's. For your sanity, you had to look away.
+            <br>
+            <br>
+            Inside a box nearby, you find a gun... you get the feeling it was left here for you, though you're having trouble quite getting it to work. Single shot, and convoluted as hell... but it's better than nothing.
+          </p>
+        </section>
+      </main>
+      <!--PROJECT FREEZER-->
+      <main class='main'>
+        <section>
+          <p>
+            <span style="color: #DD00DD; font-size:38px; font-family:oyh_human;">???????????????????</span>
+          </p>
+          <p>
+            <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">COMING: 2026...?</span>
+            </br>
+            In the year 2442, a solar flare launched that was big enough to knock down the worldwide electronic grid. Cell phones, power lines, the internet, sattelite systems; all stopped working. It didn't stop there... slowly but surely, the solar flare kept shooting further and further out, until it eventually took the entire sun with it. That was two years ago. The Earth is cold. The Earth is coming apart at the seams. The Earth is hopeless. We all have only a few months left before this hell freezes over. But that's not what matters to me. What matters to me is finding out what happened to the people I loved, before that time comes.
+          </p>
+        </section>
+
+      </main>
+    </div>
+  <script type="text/javascript">
+    window.omnisend = window.omnisend || [];
+    omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
+    omnisend.push(["track", "$pageViewed"]);
+    !function(){var e=document.createElement("script");
+    e.type="text/javascript",e.async=!0,
+    e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+    var t=document.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(e,t)}();
+  </script>
+  </body>
 </html>
