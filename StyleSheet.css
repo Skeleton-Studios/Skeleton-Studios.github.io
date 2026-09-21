@@ -455,6 +455,10 @@ iframe {
     order: 6;
     padding: 10px;    
   }
+  .textSection4{
+    order: 8;
+    padding: 10px;    
+  }  
   .videoSection{
     order: 1;
     width:auto;
@@ -470,6 +474,12 @@ iframe {
     width:auto;
     padding: 5px;
   }
+  .videoSection4{
+    order: 7;
+    width:auto;
+    padding: 5px;
+  }  
+  
   .button-holder{
     text-align: right;
 
