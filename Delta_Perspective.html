@@ -11,11 +11,11 @@
   <body>
     <style>
       @import url('StyleSheet.css');
-      .dropdown-menu-center {
-        left: 50% !important;
-        right: auto !important;
-        text-align: center !important;
-        transform: translate(-50%, 0) !important;
+      .navbar{
+        background-color: black;
+      }
+      .navbar a.active{
+        color:#DDDD00;
       }
     </style>
 
@@ -24,49 +24,18 @@
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
     </div>
-    <div class="navbar" style="background-color: black;">
-      <div class="dropdown">
-        <button onclick="clickfunction()" class="dropbtn">GAMES</button>
-        <div class="dropdown-content">
-          <a href="On_Your_Hands.html#main">ON YOUR HANDS</a>
-          <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
-		      <a class="active" style="color:#DDDD00">DELTA PERSPECTIVE</a>
-          <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
-        </div>
-      </div> 
-      <a class="highlighted" href="index.html">ABOUT</a>
-      <a href="devlog.html">NEWSLETTER</a>
-      <a href="contact.html">CONTACT</a>
-    </div> 
-    <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {myFunction()};
-
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
-      var logo = document.getElementById("logo");
-
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-      var logooffset = logo.offsetTop;
-
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-          if (window.pageYOffset >= logooffset) {
-          logo.classList.add("logooffset")
-        } else {
-          logo.classList.add("logooffset")
-        }
-      } 
-      function clickfunction() {
+    <script>        
+      function ClickFunction() {
         window.open("OurGames.html","_self")
-      }     
+      }             
     </script>
+    <special-header style="background-color: black;"></special-header>
+    <script src="./headerFooterManager.js"></script>
+    <script src="./SetActiveTab.js"></script>
+    <script>
+      SetActiveTab("deltaP");
+    </script>
+
 	<script type="text/javascript">
     window.omnisend = window.omnisend || [];
     omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
@@ -77,6 +46,7 @@
     var t=document.getElementsByTagName("script")[0];
     t.parentNode.insertBefore(e,t)}();
   </script>
+
     <div id="main"><img src="Images/deltaP_Main.png" alt="Delta Perspective Key Art" width="100%" height="100%"></div>
     <div>
       <ul style="list-style: none; margin-left: -50px">
