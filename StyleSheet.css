@@ -118,7 +118,7 @@ footer {
   text-align: center;
 }
 
-.dropdown .active {
+.dropdown .dropbtn-active {
   font-size: 30px;  
   border: none;
   outline: none;
@@ -216,6 +216,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+/* VIDEO STUFF */
 .main {
   display: flex;
   justify-content: center;
@@ -489,14 +490,14 @@ iframe {
   .dropbtn{
     z-index: 1;
   }
-  .dropdown .active{
+  .dropdown .dropbtn-active{
     width: auto;
   }
   .dropdown .dropbtn{
     width: auto;
   }
 
-  .active:active{
+  .dropbtn-active:active{
     color: #ffffff;
 
   }
