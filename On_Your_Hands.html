@@ -1,71 +1,21 @@
+---
+nav: oyh
+---
 <!DOCTYPE html>
-
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>On Your Hands</title>
     <link rel="icon" type="image/x-icon" href="Images/OYHIcon.png">
+    <link rel="stylesheet" href="StyleSheet.css">
   </head>
-    
-  <body>
-    <style>
-      @import url('StyleSheet.css');
-      .dropdown-menu-center {
-        left: 50% !important;
-        right: auto !important;
-        text-align: center !important;
-        transform: translate(-50%, 0) !important;
-      }
-    </style>
-    <div class="logo" style="background-color: black;">
+  <body class="game-page">
+    <div class="logo">
       <a href="index.html">
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
     </div>
-    <div class="navbar" style="background-color: black;">
-      <div class="dropdown">
-        <button onclick="clickfunction()" class="dropbtn">GAMES</button>
-        <div class="dropdown-content">
-          <a class="active" style="color:red">ON YOUR HANDS</a>
-          <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
-		  <a href="Delta_Perspective.html#main">DELTA PERSPECTIVE</a>
-          <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
-        </div>
-      </div> 
-      <a class="highlighted" href="index.html">ABOUT</a>
-      <a href="devlog.html">NEWSLETTER</a>
-      <a href="contact.html">CONTACT</a>
-    </div> 
-    <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {myFunction()};
-
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
-      var logo = document.getElementById("logo");
-
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-      var logooffset = logo.offsetTop;
-
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-          if (window.pageYOffset >= logooffset) {
-          logo.classList.add("logooffset")
-        } else {
-          logo.classList.add("logooffset")
-        }
-      } 
-      function clickfunction() {
-        window.open("OurGames.html","_self")
-      }     
-    </script>
+    {% include nav.html %}
     <script type="text/javascript">
       window.omnisend = window.omnisend || [];
       omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
@@ -76,7 +26,8 @@
       var t=document.getElementsByTagName("script")[0];
       t.parentNode.insertBefore(e,t)}();
     </script>
-    <div id="main"><img src="Images/mainimage.png" alt="OYH Key Art" width="100%" height="100%"></div>
+
+    <div id="main"><img src="Images/SplashArt/OYH_Splash.webp" alt="OYH Key Art" width="1920" height="1080" fetchpriority="high"></div>
     <div>
       <ul style="list-style: none; margin-left: -50px">
         <li>An alien planet</li>
@@ -88,7 +39,7 @@
     </div>
     <div style="text-align: center;">
       <iframe width="560px" height="315px" src="https://www.youtube-nocookie.com/embed/qYxQy5t1doc?si=0S6_jFJqfk7kQRIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+  </div>
     <div>
       <p class="GameDesc">
 	    <span style="color: red;">On Your Hands</span> is a puzzle-horror adventure set on the alien planet of Ooblterra; a strange world shrouded in mystery and fear.  Discover the quirks and features of seven unique magical abilities across a litany of interesting locations, as you learn the truth of this world and try and find your way back to earth.
@@ -96,7 +47,7 @@
     </div>
     <div class="desktopOnly">
       <div id="OYHDemo">
-        <br><br><h1 style="color:#00dd00; font-family: computer; font-size:50px">TRY IT OUT</h1>
+        <br><br><h1 style="color:#00dd00; font-family: computer; font-size:clamp(28px,5vw,50px)">TRY IT OUT</h1>
       </div>
       <p style="text-align: center;"><span style="font-family:computer; ">Try <span style="color: red;">On Your Hands&#39;</span> first four levels free in this extensive demo.</p><br>
       <div class="container">
@@ -117,7 +68,7 @@
         <div class="cntr">
           <div class="dropdown">
             <div class="dropbtn" style="width:260px; text-align:center; background-color:#00ee00; border-radius: 8px;  font-size: 20px;">PURCHASE FULL GAME</div>
-            <div class="dropdown-content" style="margin-left: 20%;">
+            <div class="dropdown-content" style="min-width:260px;">
               <a href="https://store.steampowered.com/app/1708200/On_Your_Hands/" target=”_blank” style="font-family:computer;">STEAM</a>
               <a href="https://skeletonstudios.itch.io/on-your-hands" target=”_blank” style="font-family:computer;">ITCH.IO</a>
               <a href="https://gamejolt.com/games/onyourhands/806240" target=”_blank” style="font-family:computer;">GAMEJOLT</a>
@@ -135,7 +86,7 @@
       </div>
     </div>
     <div id="screenshots">
-      <br><br><h1 style=" font-family: computer; font-size:50px">SCREENSHOTS</h1>
+      <br><br><h1 style=" font-family: computer; font-size:clamp(28px,5vw,50px)">SCREENSHOTS</h1>
     </div>
     <div class="row">
       <div class="column">
@@ -153,7 +104,7 @@
         <img src="Images/SteamScreenshot14.png" style="width:100%">                  
       </div>
       <div class="column">
-        <div class="desktopOnly">
+        <div class="hideOnPhone">
           <img src="Images/SteamScreenshot9.png" style="width:100%">   
           <img src="Images/SteamScreenshot10.png" style="width:100%">
           <img src="Images/SteamScreenshot11.png" style="width:100%">
@@ -163,29 +114,29 @@
       </div>              
     </div>
     <div id="Players" style="text-align: center;">
-      <br><br><h1 style=" font-family: computer; font-size:50px">PLAYER RESPONSES</h1>
+      <br><br><h1 style=" font-family: computer; font-size:clamp(28px,5vw,50px)">PLAYER RESPONSES</h1>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "An absolutely fantastic puzzle adventure."</br>
+        "An absolutely fantastic puzzle adventure."<br>
         <a href="https://steamcommunity.com/id/Emphy/recommended/1708200/" target="_blank">-Emphy</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "If you're looking for an original and unique game based on exploration and environmental puzzles, On Your Hands is definitely worth your time and money... It's a great mix of puzzles and action; it might be surprising with its setting and presentation, but it will surprise you even more with its awesome gameplay mechanics."</br>
+        "If you're looking for an original and unique game based on exploration and environmental puzzles, On Your Hands is definitely worth your time and money... It's a great mix of puzzles and action; it might be surprising with its setting and presentation, but it will surprise you even more with its awesome gameplay mechanics."<br>
         <a href="https://steamcommunity.com/profiles/76561198400350693/recommended/1708200/" target="_blank">-TIAMAT灭</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "An incredibly good puzzle horror game. Great Atmosphere, music, sound design, voice acting etc. Worldbuilding is amazing."</br>
+        "An incredibly good puzzle horror game. Great Atmosphere, music, sound design, voice acting etc. Worldbuilding is amazing."<br>
         <a href="https://steamcommunity.com/profiles/76561198164560700/recommended/1708200/" target="_blank">-Roebby</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "I instantly fell in love... The story was touching... the visuals were beautiful... Overall, 10/10. I highly recommend this."</br>
+        "I instantly fell in love... The story was touching... the visuals were beautiful... Overall, 10/10. I highly recommend this."<br>
         <a>-Samantha</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "I have not enjoyed a game like this in a long time."</br>
+        "I have not enjoyed a game like this in a long time."<br>
         <a>-Minoan</a>
       </p>      
     </div>    
@@ -198,5 +149,7 @@
     <br>
     <br>
     <br>
+  
+
   </body>
 </html>

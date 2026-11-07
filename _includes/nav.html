@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <div class="dropdown">
+    <a class="dropbtn" href="OurGames.html" {% if page.nav == "games" %}aria-current="page"{% endif %}>GAMES</a>
+    <div class="dropdown-content">
+      <a href="On_Your_Hands.html#main" {% if page.nav == "oyh" %}aria-current="page"{% endif %}>ON YOUR HANDS</a>
+      <a href="Welcome_To_Ooblterra.html#main" {% if page.nav == "wto" %}aria-current="page"{% endif %}>WELCOME TO OOBLTERRA</a>
+      <a href="Delta_Perspective.html#main" {% if page.nav == "deltap" %}aria-current="page"{% endif %}>DELTA PERSPECTIVE</a>
+      <a href="Project_Freezer.html" {% if page.nav == "freezer" %}aria-current="page"{% endif %}>UPCOMING PROJECTS</a>
+    </div>
+  </div>
+  <a href="index.html" {% if page.nav == "about" %}aria-current="page"{% endif %}>ABOUT</a>
+  <a href="devlog.html" {% if page.nav == "newsletter" %}aria-current="page"{% endif %}>NEWSLETTER</a>
+  <a href="contact.html" {% if page.nav == "contact" %}aria-current="page"{% endif %}>CONTACT</a>
+</nav>

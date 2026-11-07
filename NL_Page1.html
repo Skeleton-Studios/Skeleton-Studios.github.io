@@ -1,179 +1,21 @@
+---
+nav: newsletter
+---
+<!DOCTYPE html>
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Newsletter #1</title>
     <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
+    <link rel="stylesheet" href="StyleSheet.css">
   </head>
   <body>
-    <style>
-      @import url('StyleSheet.css');
-      * {box-sizing: border-box}
-        @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
-        @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
-
-        /* Style the navbar */
-      #navbar {
-        width: 100%;
-        background-color: #000000;
-        overflow: auto;
-      }
-
-      /* Navbar links */
-      #navbar a {
-        float: left;
-        padding: 12px;
-        color: white;
-        text-decoration: none;
-        font-size: 40px;
-        width: 25%; /* Four links of equal widths */
-        text-align: center;
-        font-family: oyh_human;   
-      }
-
-      /* Add a background color on mouse-over */
-      #navbar a:hover {
-        color: red;
-        
-      }
-      #navbar a:hover .tooltip{
-          display: block;
-      }
-
-      /* Style the current/active link */
-      #navbar a.active {
-          color: #aa0000;
-      }
-      #navbar a.highlighted {
-          color: green;
-      }
-
-      #navbar a.active:hover {
-          color: #ff0000;
-          
-      }
-      #navbar a.highlighted:hover {
-          color: #00ff00;
-          
-      }
-
-      @media screen and (max-width: 500px) {
-      #navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: left;
-        }
-      }
-
-
-      /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
-      /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-      .sticky + .content {
-        padding-top: 60px;
-      } 
-        
-      body {
-        background-color: #171717;
-        margin: 0px;
-      }
-      h1 {
-        font-family: oyh_human;
-        color: white;
-        text-align: center;
-        font-size: 40px;
-      }
-      h2 {
-        font-family: computer;
-        text-align: center;
-        font-size: 30px;
-      }
-      a {
-        font-family: computer;
-        font-size: 22px;
-      }
-      .center{
-        margin-top:40px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-      }
-      
-      .center-text{
-        margin-top:20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-      }
-      .TopDiv {
-        border: 5px outset rgba(241, 241, 241, 0);
-        background-color: rgb(4, 94, 24);    
-        text-align: center;
-        margin-left: 1%;
-        margin-right: 1%;
-        border-radius: 8px;
-      }
-
-      @media screen and (max-width: 600px){
-
-      }
-    </style>
     <div class="logo">
       <a href="index.html">
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
     </div>
-    <div class="navbar">
-      <div class="dropdown">
-        <button onclick="clickFunction()" class="dropbtn">GAMES</button>
-        <div class="dropdown-content">
-          <a href="On_Your_Hands.html#main"><span style="color:#ff0000">On Your Hands</span></a>
-          <a href="Welcome_To_Ooblterra.html#main">WELCOME TO OOBLTERRA</a>
-          <a href="Delta_Perspective.html#main">DELTA PERSPECTIVE</a>
-          <a href="Project_Freezer.html">UPCOMING PROJECTS</a>
-        </div>
-      </div> 
-        <a href="index.html">ABOUT</a>
-        <a class="active" href="devlog.html">NEWSLETTER</a>
-        <a href="contact.html">CONTACT</a>
-    </div> 
-    <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {myFunction()};
-
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
-      var logo = document.getElementById("logo");
-
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-      var logooffset = logo.offsetTop;
-
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-          if (window.pageYOffset >= logooffset) {
-          logo.classList.add("logooffset")
-        } else {
-          logo.classList.add("logooffset")
-        }
-      } 
-      function clickFunction() {
-        window.open("OurGames.html","_self")
-      }            
-    </script>
+    {% include nav.html %}
     <script type="text/javascript">
       window.omnisend = window.omnisend || [];
       omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
@@ -208,23 +50,23 @@
       <div class="text-and-image">
         <!--This BR tag brings the text closer to the middle, but should only be necessary if the text is a single line long-->
         <p class="newsletter">All owners of <span style="color:#ff0000">On Your Hands</span> will also recieve a free DLC, the Rainbringer's Extras. It can be found by browsing the local files of your <span style="color:#ff0000">On Your Hands</span> install, and includes <b>goodies such as character models, beta builds, unused assets, and more!</b> </p>
-        <img class="rightimg" src="Images/betaimage.png">
+        <img class="rightImg" src="Images/betaimage.png">
       </div>
       <br>
       <br>
       <h2><span style="color:#ff0000">On Your Hands</span>: Founder's Edition</h2>
-      <p class="Newsletter" style="text-align: justify;">Included in the <i>Deluxe Edition Bundle</i> for <span style="color:#ff0000">On Your Hands</span> is the Founder's Edition, featuring a 30-page FBI document detailing the aftermath of the Wonder Project. This document contains biological information for the three human leads, a "where-are-they-now" for the main character, as well as lots of historical and scientific information on the planet of Ooblterra. It also features unique hand-drawn art, and even a puzzle mechanic. Yes, seriously.</p>
+      <p class="newsletter" style="text-align: justify;">Included in the <i>Deluxe Edition Bundle</i> for <span style="color:#ff0000">On Your Hands</span> is the Founder's Edition, featuring a 30-page FBI document detailing the aftermath of the Wonder Project. This document contains biological information for the three human leads, a "where-are-they-now" for the main character, as well as lots of historical and scientific information on the planet of Ooblterra. It also features unique hand-drawn art, and even a puzzle mechanic. Yes, seriously.</p>
       <br>
       <h2><span style="color:#ff0000">On Your Hands</span>: Official Soundtrack</h2>
       <div class="text-and-image">
-        <img class="leftimg" src="Images/albumart.png" style="width:200px; height:200px">
+        <img class="leftImg" src="Images/albumart.png" style="width:200px; height:200px">
         <!--This BR tag brings the text closer to the middle, but should only be necessary if the text is a single line long-->
         <p class="newsletter">Also included in the <i>Deluxe Edition Bundle</i> for <span style="color:#ff0000">On Your Hands</span> is the full soundtrack. With all 25 of the game's original music tracks, plus 4 exclusive bonus tracks like the puzzle solve jingle, the soundtrack includes both portable MP3s and high quality WAV files for whatever method of listening you prefer.</p>
       </div>
       <br>
       <h2><span style="color:#00ff00">Skeleton Studios</span>: Into the Future</h2>
       <p class="newsletter" style="text-align: justify;"><span style="color:#00ff00">Skeleton Studios</span> has lots of work in the pipeline. Of course, <span style="color: #00ccaa;">Welcome to Ooblterra</span> is overdue to be updated, which we hope to deliver in the coming weeks. In addition, we're hard at work on our next full release... and we promised an exclusive look, so here it is:</p>
-      <img class="centerIMG" src="Images/preview-sightjack.png"></img>
+      <img class="centerImg" src="Images/preview-sightjack.png"></img>
       <br>
       <p style="text-align: center;">There. That's sure to give you a whole bunch to speculate on.</p>
   </body>
