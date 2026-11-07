@@ -1,25 +1,17 @@
+---
+nav: deltap
+---
 <!DOCTYPE html>
-
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Delta Perspective</title>
     <link rel="icon" type="image/x-icon" href="Images/deltap_icon.png">
+    <link rel="stylesheet" href="StyleSheet.css">
   </head>
-    
-  <body>
-    <style>
-      @import url('StyleSheet.css');
-      .navbar{
-        background-color: black;
-      }
-      .navbar a.active{
-        color:#DDDD00;
-      }
-    </style>
+  <body class="game-page">
 
-    <div class="logo" style="background-color: black;">
+    <div class="logo">
       <a href="index.html">
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
@@ -30,24 +22,20 @@
       }             
     </script>
     <special-header style="background-color: black;"></special-header>
-    <script src="./headerFooterManager.js"></script>
-    <script src="./SetActiveTab.js"></script>
-    <script>
-      SetActiveTab("deltaP");
-    </script>
+    {% include nav.html %}
 
 	<script type="text/javascript">
-    window.omnisend = window.omnisend || [];
-    omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
-    omnisend.push(["track", "$pageViewed"]);
-    !function(){var e=document.createElement("script");
-    e.type="text/javascript",e.async=!0,
-    e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
-    var t=document.getElementsByTagName("script")[0];
-    t.parentNode.insertBefore(e,t)}();
-  </script>
+		window.omnisend = window.omnisend || [];
+		omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
+		omnisend.push(["track", "$pageViewed"]);
+		!function(){var e=document.createElement("script");
+		e.type="text/javascript",e.async=!0,
+		e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+		var t=document.getElementsByTagName("script")[0];
+		t.parentNode.insertBefore(e,t)}();
+	</script>
 
-    <div id="main"><img src="Images/deltaP_Main.png" alt="Delta Perspective Key Art" width="100%" height="100%"></div>
+    <div id="main"><img src="Images/SplashArt/DeltaP_Splash.png" alt="Delta Perspective Key Art" width="1920" height="1080" fetchpriority="high"></div>
     <div>
       <ul style="list-style: none; margin-left: -50px">
         <li>A Dark Mine</li>
@@ -68,7 +56,7 @@
     </div>
     <div class="desktopOnly">
       <div id="DeltaPDemo">
-        <h1 style="color:#00dd00; font-family: computer; font-size:50px">TRY IT OUT</h1>
+        <h1 style="color:#00dd00; font-family: computer; font-size:clamp(28px,5vw,50px)">TRY IT OUT</h1>
       </div>
       <p style="text-align: center;"><span style="font-family:computer; ">Try <span style="color: #DDDD00;">Delta Perspective</span>&#39;s first level free in this demo.</p><br>
       <div class="button-holder" style="flex-direction: column; align-content: center;">
@@ -90,7 +78,7 @@
       </div>
     </div>
     <div id="screenshots">
-        <h1 style=" font-family: computer; font-size:50px">SCREENSHOTS</h1>
+        <h1 style=" font-family: computer; font-size:clamp(28px,5vw,50px)">SCREENSHOTS</h1>
     </div>
     <div class="row">
       <div class="column">

@@ -1,65 +1,39 @@
+---
+nav: games
+---
 <!DOCTYPE html>
-
 <html>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Games By Skeleton Studios</title>
     <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="prefetch" as="image" href="Images/mainimage.png">
+    <link rel="prefetch" as="image" href="Images/TITLE.png">
+    <link rel="prefetch" as="image" href="Images/deltaP_Main.png">
   </head>
-
-  <body>
-    <style>
-      @import url('StyleSheet.css');
-      /* override left margin */
-      p {
-        margin-left: 0vw;
-      }
-    </style>    
+  <body class="ourgames-page">  
 
     <div class="logo">
       <a href="index.html">
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
     </div>
-
-    <script>
-      function ClickFunction() {
-        var content = document.getElementById('hiddenDropDown1');
-        if(window.innerWidth > 600){
-            return;
-        } 
-        if (content.classList.contains('collapsed')) {
-            content.classList.remove('collapsed');
-            return;
-        }  
-        content.classList.add('collapsed');
-      }
-    </script>
-    
-    <special-header></special-header>
-    <script src="./headerFooterManager.js"></script>
-    <script src="./SetActiveTab.js"></script>
-    <script>
-      SetActiveTab("gamesButton");
-    </script>
-
+    {% include nav.html %}
     <div>
-      <h1 style="color: #00ff00; font-size:50px; font-family:computer; text-align: center;">GAMES</h1>
+      <h1 style="color: #00ff00; font-size:clamp(28px,5vw,50px); font-family:computer; text-align: center;">GAMES</h1>
     </div>
-    
     <div class='GamesList'>
 	  <!--TDTSWO-->
       <section class='videoSection'>
         <img src="Images/AHint.png">
       </section>  
 	  <section class='textSection'>
-        <span style="color: #DD00DD; font-size:38px; font-family:oyh_human;">?????????????????????</span>
+        <span style="color: #DD00DD; font-size:38px; font-family:oyh_human; overflow-wrap:anywhere;">?????????????????????</span>
         <p style="font-family:computer; font-size:22px;text-align: justify;">
           <br>
           <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">RELEASED: ???????</span>
-          </br>
+          <br>
 		  To be announced...
         </p>
         <div class="button-holder-left">
@@ -75,7 +49,7 @@
         <p style="font-family:computer; font-size:22px;text-align: justify;">
           <br>
           <span style="font-size:15px;">RELEASE: December 18th, 2024 (Demo Only)</span>
-          </br>
+          <br>
           Featuring push-forward gameplay, detailed levels, multiple player characters, and fascinating mechanics, <span style="color: #DDDD00;">Delta Perspective</span> is a tense survival horror game.
         </p>
         <div class="button-holder" style="justify-content:right;">
@@ -84,19 +58,19 @@
         </div>
       </section>
       <section class='videoSection2'>
-        <video src="Images/DeltaP_trailer.mp4" type="video/mp4" controls></video>
+        <video src="Images/Trailer/DeltaP_trailer.mp4" type="video/mp4" controls playsinline preload="metadata" poster="Images/Trailer/thumb/DeltaP_Thumb.png"></video>
       </section>  
 
       <!--WELCOME TO OOBLTERRA-->
       <section class='videoSection3'>
-        <video src="Images/WTO_trailer.mp4" type="video/mp4" controls></video>
+        <video src="Images/Trailer/WTO_trailer.mp4" type="video/mp4" controls playsinline preload="metadata" poster="Images/Trailer/thumb/WTO_Thumb.png"></video>
       </section>
       <section class='textSection3'>
         <span style="color: #00ccaa; font-size:38px; font-family:oyh_human;">Welcome to Ooblterra!</span>
         <p style="font-family:computer; font-size:22px;text-align: justify;">
           <br>
           <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">RELEASED: MAY 2024</span>
-          </br>
+          <br>
           Featuring a brand new moon, interior, 7 enemy types, 4 new map hazards, 10 new scrap, and many fun mechanics, <span style="color: #00ccaa;">Welcome to Ooblterra</span> is a free mod for <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" target=”_blank”>Lethal Company</a> based on <span style="color:#ff0000">On Your Hands</span>.
         </p>
         <div class="button-holder-left">
@@ -112,7 +86,7 @@
         <p style="font-family:computer; font-size:22px;text-align: justify;">
           <br>
           <span style="font-size:15px;; margin-bottom:50px;">RELEASED: APRIL 2023</span>
-          </br>
+          <br>
           An unexplored alien world, seven unique magical abilities, 20+ levels, and a zoo's worth of strange monsters! <span style="color:#ff0000">On Your Hands</span> is a first person puzzle game with light horror elements.
         </p>
         <div class="button-holder" style="justify-content:right;">
@@ -133,7 +107,7 @@
         </div>
       </section>
       <section class='videoSection4'>
-        <video src="Images/OYH_trailer.mp4" type="video/mp4" controls></video>
+        <video src="Images/Trailer/OYH_trailer.mp4" type="video/mp4" controls playsinline preload="metadata" poster="Images/Trailer/thumb/OYH_Thumb.png"></video>
       </section>
     </div>
     <br>

@@ -1,45 +1,31 @@
+---
+nav: contact
+---
 <!DOCTYPE html>
-
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">    
-
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skeleton Studios Contact Page</title>
     <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
+    <link rel="stylesheet" href="StyleSheet.css">
   </head>
-  
   <body>
-    <style>
-    @import url('StyleSheet.css');
-    </style>
-    
     <div class="logo">
       <a href="index.html">
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
     </div>
-    
-    <script>        
-      function ClickFunction() {
-        window.open("OurGames.html","_self")
-      }             
-    </script>
-    <special-header></special-header>
-    <script src="./headerFooterManager.js"></script>
-    <script src="./SetActiveTab.js"></script>
-    <script>
-      SetActiveTab("contact");
-    </script>
+	{% include nav.html %}
 
-          <script type="text/javascript">
-            window.omnisend = window.omnisend || [];
-            omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
-            omnisend.push(["track", "$pageViewed"]);
-            !function(){var e=document.createElement("script");
-            e.type="text/javascript",e.async=!0,
-            e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
-            var t=document.getElementsByTagName("script")[0];
-            t.parentNode.insertBefore(e,t)}();
+	<script type="text/javascript">
+		window.omnisend = window.omnisend || [];
+		omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
+		omnisend.push(["track", "$pageViewed"]);
+		!function(){var e=document.createElement("script");
+		e.type="text/javascript",e.async=!0,
+		e.src="https://omnisnippet1.com/inshop/launcher-v2.js";
+		var t=document.getElementsByTagName("script")[0];
+		t.parentNode.insertBefore(e,t)}();
     </script>
         <p style="text-align: center;">
         EMAIL US <a href="mailto:skeletongamesoftware@gmail.com">HERE</a>

@@ -1,42 +1,21 @@
+---
+nav: oyh
+---
 <!DOCTYPE html>
-
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>On Your Hands</title>
     <link rel="icon" type="image/x-icon" href="Images/OYHIcon.png">
+    <link rel="stylesheet" href="StyleSheet.css">
   </head>
-    
-  <body>
-    <style>
-      @import url('StyleSheet.css');
-      .navbar{
-        background-color: black;
-      }
-      .navbar a.active{
-        color:red;
-      }      
-    </style>
-    
-    <div class="logo" style="background-color: black;">
+  <body class="game-page">
+    <div class="logo">
       <a href="index.html">
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
     </div>
-    
-    <script>        
-      function ClickFunction() {
-        window.open("OurGames.html","_self")
-      }             
-    </script>
-    <special-header style="background-color: black;"></special-header>
-    <script src="./headerFooterManager.js"></script>
-    <script src="./SetActiveTab.js"></script>
-    <script>
-      SetActiveTab("oyh");
-    </script>
-
+    {% include nav.html %}
     <script type="text/javascript">
       window.omnisend = window.omnisend || [];
       omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);
@@ -48,7 +27,7 @@
       t.parentNode.insertBefore(e,t)}();
     </script>
 
-    <div id="main"><img src="Images/mainimage.png" alt="OYH Key Art" width="100%" height="100%"></div>
+    <div id="main"><img src="Images/SplashArt/OYH_Splash.png" alt="OYH Key Art" width="1920" height="1080" fetchpriority="high"></div>
     <div>
       <ul style="list-style: none; margin-left: -50px">
         <li>An alien planet</li>
@@ -68,7 +47,7 @@
     </div>
     <div class="desktopOnly">
       <div id="OYHDemo">
-        <br><br><h1 style="color:#00dd00; font-family: computer; font-size:50px">TRY IT OUT</h1>
+        <br><br><h1 style="color:#00dd00; font-family: computer; font-size:clamp(28px,5vw,50px)">TRY IT OUT</h1>
       </div>
       <p style="text-align: center;"><span style="font-family:computer; ">Try <span style="color: red;">On Your Hands&#39;</span> first four levels free in this extensive demo.</p><br>
       <div class="container">
@@ -107,7 +86,7 @@
       </div>
     </div>
     <div id="screenshots">
-      <br><br><h1 style=" font-family: computer; font-size:50px">SCREENSHOTS</h1>
+      <br><br><h1 style=" font-family: computer; font-size:clamp(28px,5vw,50px)">SCREENSHOTS</h1>
     </div>
     <div class="row">
       <div class="column">
@@ -125,7 +104,7 @@
         <img src="Images/SteamScreenshot14.png" style="width:100%">                  
       </div>
       <div class="column">
-        <div class="desktopOnly">
+        <div class="hideOnPhone">
           <img src="Images/SteamScreenshot9.png" style="width:100%">   
           <img src="Images/SteamScreenshot10.png" style="width:100%">
           <img src="Images/SteamScreenshot11.png" style="width:100%">
@@ -135,29 +114,29 @@
       </div>              
     </div>
     <div id="Players" style="text-align: center;">
-      <br><br><h1 style=" font-family: computer; font-size:50px">PLAYER RESPONSES</h1>
+      <br><br><h1 style=" font-family: computer; font-size:clamp(28px,5vw,50px)">PLAYER RESPONSES</h1>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "An absolutely fantastic puzzle adventure."</br>
+        "An absolutely fantastic puzzle adventure."<br>
         <a href="https://steamcommunity.com/id/Emphy/recommended/1708200/" target="_blank">-Emphy</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "If you're looking for an original and unique game based on exploration and environmental puzzles, On Your Hands is definitely worth your time and money... It's a great mix of puzzles and action; it might be surprising with its setting and presentation, but it will surprise you even more with its awesome gameplay mechanics."</br>
+        "If you're looking for an original and unique game based on exploration and environmental puzzles, On Your Hands is definitely worth your time and money... It's a great mix of puzzles and action; it might be surprising with its setting and presentation, but it will surprise you even more with its awesome gameplay mechanics."<br>
         <a href="https://steamcommunity.com/profiles/76561198400350693/recommended/1708200/" target="_blank">-TIAMAT灭</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "An incredibly good puzzle horror game. Great Atmosphere, music, sound design, voice acting etc. Worldbuilding is amazing."</br>
+        "An incredibly good puzzle horror game. Great Atmosphere, music, sound design, voice acting etc. Worldbuilding is amazing."<br>
         <a href="https://steamcommunity.com/profiles/76561198164560700/recommended/1708200/" target="_blank">-Roebby</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "I instantly fell in love... The story was touching... the visuals were beautiful... Overall, 10/10. I highly recommend this."</br>
+        "I instantly fell in love... The story was touching... the visuals were beautiful... Overall, 10/10. I highly recommend this."<br>
         <a>-Samantha</a>
       </p>
       <br>
       <p style="text-align: center; margin-left: 20%; margin-right: 20%;">
-        "I have not enjoyed a game like this in a long time."</br>
+        "I have not enjoyed a game like this in a long time."<br>
         <a>-Minoan</a>
       </p>      
     </div>    

@@ -1,144 +1,21 @@
+---
+nav: newsletter
+---
 <!DOCTYPE html>
-
 <html>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <head>
-      <title>Skeleton Studios Updates</title>
-      <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
-    </head>
-    
-    <body>
-      <style>
-        @import url('StyleSheet.css');
-        * {box-sizing: border-box}
-         @font-face { font-family: oyh_human; src: url('Oyh_human-Regular.ttf'); } 
-         @font-face { font-family: computer; src: url('Computer_Text.ttf'); } 
-
-         /* Style the navbar */
-        #navbar {
-          width: 100%;
-          background-color: #000000;
-          overflow: auto;
-        }
-
-        /* Navbar links */
-        #navbar a {
-          float: left;
-          padding: 12px;
-          color: white;
-          text-decoration: none;
-          font-size: 40px;
-          width: 25%; /* Four links of equal widths */
-          text-align: center;
-          font-family: oyh_human;   
-        }
-
-        /* Add a background color on mouse-over */
-        #navbar a:hover {
-          color: red;
-          
-        }
-        #navbar a:hover .tooltip{
-            display: block;
-        }
-
-        /* Style the current/active link */
-        #navbar a.active {
-           color: #aa0000;
-        }
-        #navbar a.highlighted {
-            color: green;
-        }
-
-        #navbar a.active:hover {
-           color: #ff0000;
-           
-        }
-        #navbar a.highlighted:hover {
-            color: #00ff00;
-            
-        }
-
-        @media screen and (max-width: 500px) {
-        #navbar a {
-          float: none;
-          display: block;
-          width: 100%;
-          text-align: left;
-          }
-        }
-
-
-        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-        .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-
-        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-        .sticky + .content {
-          padding-top: 60px;
-        } 
-         
-        body {
-          background-color: #171717;
-          margin: 0px;
-        }
-        h1 {
-          font-family: oyh_human;
-          color: white;
-          text-align: center;
-          font-size: 40px;
-        }
-
-        p {
-          font-family: verdana;
-          font-size: 20px;
-          color: #aaaaaa;
-          text-align: center;
-        }
-        p.devlog {
-          font-family: computer; 
-          font-size:22px;
-
-        }
-        .center{
-          margin-top:40px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 30%;
-        }
-        
-        .center-text{
-          margin-top:20px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 80%;
-        }
-        
-      </style>
+    <title>Skeleton Studios Updates</title>
+    <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
+    <link rel="stylesheet" href="StyleSheet.css">
+  </head>
+  <body class="devlog-page">
       <div class="logo">
         <a href="index.html">
           <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
         </a>
       </div>
-
-    <script>        
-      function ClickFunction() {
-        window.open("OurGames.html","_self")
-      }             
-    </script>
-    <special-header></special-header>
-    <script src="./headerFooterManager.js"></script>
-    <script src="./SetActiveTab.js"></script>
-    <script>
-      SetActiveTab("newsletter");
-    </script>
-
+      {% include nav.html %}
       <script type="text/javascript">
         window.omnisend = window.omnisend || [];
         omnisend.push(["accountID", "66bfa43e38fda84f186c86b7"]);

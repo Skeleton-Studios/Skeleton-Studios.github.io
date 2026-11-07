@@ -1,47 +1,31 @@
+---
+nav: freezer
+---
 <!DOCTYPE html>
-
 <html>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <head>
-      <title>Games By Skeleton Studios</title>
-      <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
-    </head>
+    <title>Games By Skeleton Studios</title>
+    <link rel="icon" type="image/x-icon" href="Images/skeletonheadtrans.png">
+    <link rel="stylesheet" href="StyleSheet.css">
+  </head>
   <body>
-    <style>
-      @import url('StyleSheet.css');
-      .navbar{
-        background-color: black;
-      }
-      .navbar a.active{
-        color: #00ff00;
-      }
-    </style>
     <div class="logo" style="background-color: black;">
       <a href="index.html">
         <img src="Images/long_logo.png" alt="Skeleton Studios" class="center-logo">
       </a>
     </div>
-    <script>        
-      function ClickFunction() {
-        window.open("OurGames.html","_self")
-      }             
-    </script>
-    <special-header style="background-color: black;"></special-header>
-    <script src="./headerFooterManager.js"></script>
-    <script src="./SetActiveTab.js"></script>
-    <script>
-      SetActiveTab("freezer");
-    </script>
+    {% include nav.html %}
     <div>
       <!--PROJECT FREEZER-->
       <main class='main'>
         <section>
           <p>
-            <span style="color: #DD00DD; font-size:38px; font-family:oyh_human;">???????????????????</span>
+            <span style="color: #DD00DD; font-size:38px; font-family:oyh_human; overflow-wrap:anywhere;">???????????????????</span>
           </p>
           <p>
-            <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">COMING: 2026...?</span>
-            </br>
+            <span style="font-size:15px; margin-top:-20px; margin-bottom:20px;">COMING: 2029...?</span>
+            <br>
             In the year 2442, a solar flare launched that was big enough to knock down the worldwide electronic grid. Cell phones, power lines, the internet, sattelite systems; all stopped working. It didn't stop there... slowly but surely, the solar flare kept shooting further and further out, until it eventually took the entire sun with it. That was two years ago. The Earth is cold. The Earth is coming apart at the seams. The Earth is hopeless. We all have only a few months left before this hell freezes over. But that's not what matters to me. What matters to me is finding out what happened to the people I loved, before that time comes.
           </p>
         </section>
